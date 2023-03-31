@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Vista Trader</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../scss/style.scss">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.js"></script>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="../images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="cssload-container">
+        <svg class="filter" version="1.1">
+          <defs>
+            <filter id="gooeyness">
+              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness"></fecolormatrix>
+              <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
+            </filter>
+          </defs>
+        </svg>
+        <img src="../images/logo-344x67.png" alt="" width="172" height="33">
+        <div class="dots">
+          <div class="dot mainDot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <p>Cargando...</p>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+      
+      <header class="page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px" data-lg-stick-up-offset="35px">
+            <!-- RD Navbar Top Panel-->
+            
+            <div class="rd-navbar-inner rd-navbar-search-wrap">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a class="brand-name" href="../index.html"><img src="../images/logo-344x67.png" alt="" width="172" height="33"/></a></div>
+              </div>
+              <!-- RD Navbar Nav-->
+              <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
+                <div class="rd-navbar-search_collapsable">
+                  <ul class="rd-navbar-nav">
+                    
+                    <li class="active">
+                      <div class="dropdown show">
+                        <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Investigación
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="../index.html#blockchain">Blockchain</a>
+                          <a class="dropdown-item" href="../index.html#blockchain">Inteligencia Artificial</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li> <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Servicios
+                      </a>
+                    
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="../index.html#Productos">Productos Neo</a>
+                        <a class="dropdown-item" href="../Ecosistema.html">NeoDEX</a> 
+                        <a class="dropdown-item" href="../Grebana.html">Grebana</a>
+                        <a class="dropdown-item" href="https://partners.neofintech.com.co/">Neo Partners</a> 
+                      </div>
+                    </div>
+                    </li>
+                    <li> <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Compañía
+                      </a>
+                    
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="../Nosotros.html">Acerca de Neo</a>
+                        <a class="dropdown-item" href="https://neofintech.com.co/index.php/neo-shorts/">Neo Shorts</a>
+                        <a class="dropdown-item" href="../Soporte.html">Preguntas Frecuentes</a>
+                        
+                      </div>
+                    </div>
+                    </li>
+                    <li> <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Desarrolladores
+                      </a>
+                    
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <!-- <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a> -->
+                      </div>
+                    </div>
+                    </li>
+                    <li>
+                      <a href="https://neo-fintech.com/" class="button button-black button-shadow">
+                        Acceder
+                      </a>
+                  </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="section parallax-container context-dark" data-parallax-img="../images/binanceparallax.jpg">
+            <div class="parallax-content parallax-header">
+              <div class="parallax-header__inner context-dark text-center">
+                <div class="parallax-header__content">
+                  <div class="container">
+                    <div class="row justify-content-sm-center">
+                      <div class="col-md-5 col-xl-8">
+                        <h2 class="heading-decorated">Cryptocurrency  <br> <span style="color: #fcd535;">Prices</span> </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- -----------------------------fin Parallax-------------------- -->
+          <section>
+            <div class="row">
+              <div class="col">
+                <div >
+                  <div  id="traderview"style=" height: 75vh;" >
+                    <div class="table-responsive" >
+                      <table class="table">
+                        <thead>
+                          <tr >
+                            <th scope="col"></th>
+                            <th scope="col">Coin</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1 </th>
+                            <td><img src="../images/bitcoin.png" alt="" width="30" height="30"></td>
+                            <td><h6 class="card">Bitcoin (BTC)</h6></td>
+                            <td><p class="card-text" id="btc">-</p></td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td><img src="../images/ethereum.png" alt="" width="30" height="30"></td>
+                            <td><h6 class="card">Ethereum (ETH)</h6></td>
+                            <td><p class="card-text" id="ether">-</p></td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td><img src="../images/tether.png" alt="" width="30" height="30"></td>
+                            <td><h6 class="card">Tether (USDT)</h6></td>
+                            <td><p class="card-text" id="usdt">-</p></td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td><img src="../images/Binance.png" alt="" width="30" height="30"></td>
+                            <td><h6 class="card">Binance Coin (BNB)</h6></td>
+                            <td><p class="card-text" id="bnb">-</p></td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td><img src="../images/cardano.png" alt="" width="30" height="30"></td>
+                            <td><h6 class="card">Cardano (ADA)</h6></td>
+                            <td><p class="card-text" id="ada">-</p></td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td><img src="../images/xrp.png" alt="" width="30" height="30"></td>
+                            <td><h6 class="card">XRP (XRP)</h6></td>
+                            <td><p class="card-text" id="xrp">-</p></td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td><img src="../images/solana.png" alt="" width="30" height="30"></td>
+                            <td><h6 class="card">Solana (SOL)</h6></td>
+                            <td><p class="card-text" id="sol">-</p></td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td><img src="../images/polkadot.png" alt="" width="30" height="30"></td>
+                            <td><h6 class="card">Polkadot (DOT)</h6></td>
+                            <td><p class="card-text" id="dot">-</p></td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+          
+                          
+                    
+                  </div>
+                 </div>
+              </div>
+              <div class="col">
+                <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/USDT/?exchange=CRYPTOCAP" rel="noopener" target="_blank"><span class="blue-text">Tether</span></a> por TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "symbols": [
+    [
+      "Tether",
+      "CRYPTOCAP:USDT|12M"
+    ],
+    [
+      "Bitcoin",
+      "BITSTAMP:BTCUSD|12M"
+    ],
+    [
+      "Ethereum",
+      "BITSTAMP:ETHUSD|12M"
+    ],
+    [
+      "Binance USDT",
+      "BINANCE:BNBUSDT|12M"
+    ],
+    [
+      "Cardano",
+      "BINANCE:ADAUSDT|12M"
+    ],
+    [
+      "XRP",
+      "BINANCE:XRPUSDT|12M"
+    ],
+    [
+      "Solana",
+      "COINBASE:SOLUSDT|12M"
+    ],
+    [
+      "Polkadot",
+      "COINBASE:DOTUSDT|12M"
+    ]
+  ],
+  "chartOnly": false,
+  "width": 1000,
+  "height": 500,
+  "locale": "es",
+  "colorTheme": "light",
+  "autosize": false,
+  "showVolume": false,
+  "showMA": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "Mundial, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "chartType": "line",
+  "backgroundColor": "#f3f5f7"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+              </div>
+            </div>
+          </section>
+          <section>
+           
+          </section>
+          <section>
+            
+          </section>
+          
+          
+          
+          
+          
+
+        
+        <section class="section parallax-container context-dark" data-parallax-img="../images/binanceparallax.jpg">
+            <div class="parallax-content">
+              <div class="container section-md">
+                <div class="row justify-content-md-center row-50">
+                 
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+      </main> 
+
+      <!-- Page Footer--> 
+      <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
+        <div class="container">
+          <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="../ndex.html"><img src="../images/logo-white-344x67.png" alt="" width="172" height="33"/></a>
+              <h6></h6>
+              <p></p>
+            </div>
+            
+            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+              <h6>Usuarios</h6>
+              <ul class="list-xxs">
+                <li><a href="https://partners.neofintech.com.co/">Neo Partners</a></li>
+                <li><a href="https://www.figma.com/file/k49o5IiqZ044IWdepXh4xJ/Presentaci%C3%B3n-Portafolio-de-Inversi%C3%B3n-NEO?node-id=0%3A1&t=00HRnmUmrSLA8A7Y-1">Recursos</a></li>
+                <li><a href="https://neofintech.com.co/index.php/neo-shorts/">Neo Shorts</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+              <h6>Seguridad</h6>
+              <ul class="list-xxs">
+                <li><a href="../html/Guia.html">Guía para inversión responsable</a></li>
+                <li><a href="../html/politicas.html">Politicas de Privacidad</a></li>
+                
+              </ul>
+            </div>
+           
+            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+              <h6>Compañía</h6>
+              <ul class="list-xxs">
+                <li><a href="../Nosotros.html">Acerca de Neo</a></li>
+                <li><a href="../Soporte.html">Preguntas Frecuentes</a></li>
+                <li><a href="../Ecosistema.html">NeoDEX</a></li>
+                <li><a href="../html/vistatrader.html">Vista Trader</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="../js/core.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/btc.js"></script>
+    <script src="../js/ether.js"></script>
+    <script src="../js/usdt.js"></script>
+    <script src="../js/bnb.js"></script>
+    <script src="../js/ada.js"></script>
+    <script src="../js/xrp.js"></script>
+    <script src="../js/sol.js"></script>
+    <script src="../js/dot.js"></script>
+  </body>
+</html>
