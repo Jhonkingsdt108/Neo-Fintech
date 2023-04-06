@@ -158,7 +158,7 @@ hr {
 h1, h2, h3, h4, h5, h6, .heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: "Mundial", sans-serif;
+	font-family: "mundial", sans-serif;
 	font-weight: 400;
 	color: #41516A;
 	
@@ -19319,4 +19319,26 @@ h3 + .card-custom-group-wrap {
 	width: 100%;
 	height: 90vh;
 	
+}
+.newsletter{
+	font-size: 18px;
+	color: #fff;
+	width: 100%;
+	background-color: transparent;
+	border: 0px;
+	border-bottom: solid 1px #5e636e;
+}
+.newsletter:focus{
+	font-size: 18px;
+	font-weight: 100;
+}
+.btn-news{
+	color: #fff;
+	font-size: 18px;
+	margin-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 10px;
+	border: 0px;
+	background-color: #9c63ff;
 }
