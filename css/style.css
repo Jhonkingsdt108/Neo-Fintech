@@ -13,7 +13,7 @@ button::-moz-focus-inner {
 	outline: none;
 }
 *::-webkit-scrollbar{
-	width: 12px;
+	width: 11px;
 }
 *::-webkit-scrollbar-track{
 	background-color: #0b132b;
