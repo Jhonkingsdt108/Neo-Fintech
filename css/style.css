@@ -19342,3 +19342,7 @@ h3 + .card-custom-group-wrap {
 	border: 0px;
 	background-color: #9c63ff;
 }
+#pdf{
+	width: 100%;
+	height: 100vh;
+}
