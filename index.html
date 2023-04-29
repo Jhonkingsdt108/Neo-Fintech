@@ -1,251 +1,278 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <!-- Site Title-->
-    <title>Neo</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
-    <link rel="stylesheet" href="css/bootstrap.css?123">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/style.css?123">
-    <link rel="stylesheet" href="css/fonts.css?123">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://use.typekit.net/qul1knf.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-    
-      <meta http-equiv="Expires" content="0">
-      <meta http-equiv="Last-Modified" content="0">
-      <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-      <meta http-equiv="Pragma" content="no-cache">
-  </head>
-  <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="cssload-container">
-        <svg class="filter" version="1.1">
-          <defs>
-            <filter id="gooeyness">
-              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
-              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness"></fecolormatrix>
-              <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
-            </filter>
-          </defs>
-        </svg>
-        
-        <div class="dots">
-          <div class="dot mainDot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-        
-        <p>Cargando...</p>
-        
+
+<head>
+  <!-- Site Title-->
+  <title>Neo</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Stylesheets-->
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
+  <link rel="stylesheet" href="css/bootstrap.css?123">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css?123">
+  <link rel="stylesheet" href="css/fonts.css?123">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.typekit.net/qul1knf.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="cssload-container">
+      <svg class="filter" version="1.1">
+        <defs>
+          <filter id="gooeyness">
+            <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+            <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness">
+            </fecolormatrix>
+            <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
+          </filter>
+        </defs>
+      </svg>
+
+      <div class="dots">
+        <div class="dot mainDot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
       </div>
+
+      <p>Cargando...</p>
+
     </div>
-    <!-- Page-->
-    <div class="page">
-      <!-- Page header-->
-      <header class="page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar_transparent rd-navbar_boxed" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px" data-lg-stick-up-offset="35px" data-body-class="rd-navbar-absolute">
-            <!-- RD Navbar Top Panel-->
-            <div class="rd-navbar-top-panel">
-              <div class="rd-navbar-top-panel__main">
-                <div class="rd-navbar-top-panel__toggle rd-navbar-fixed__element-1 rd-navbar-static--hidden" data-rd-navbar-toggle=".rd-navbar-top-panel__main"></div>
-                
-              </div>
+  </div>
+  <!-- Page-->
+  <div class="page">
+    <!-- Page header-->
+    <header class="page-header">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar_transparent rd-navbar_boxed" data-layout="rd-navbar-fixed"
+          data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+          data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed"
+          data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false"
+          data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px"
+          data-lg-stick-up-offset="35px" data-body-class="rd-navbar-absolute">
+          <!-- RD Navbar Top Panel-->
+          <div class="rd-navbar-top-panel">
+            <div class="rd-navbar-top-panel__main">
+              <div class="rd-navbar-top-panel__toggle rd-navbar-fixed__element-1 rd-navbar-static--hidden"
+                data-rd-navbar-toggle=".rd-navbar-top-panel__main"></div>
+
             </div>
-            <div class="rd-navbar-inner rd-navbar-search-wrap">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-344x67.png" alt="" width="172" height="33"/></a></div>
-              </div>
-              <!-- RD Navbar Nav-->
-              <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
-                <div class="rd-navbar-search_collapsable">
-                  <ul class="rd-navbar-nav">
-                    <li class="active">
-                      <div class="dropdown show">
-                        <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Investigación
-                        </a>
-                      
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#blockchain">Blockchain</a>
-                          <a class="dropdown-item" href="#blockchain">Inteligencia Artificial</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Productos
+          </div>
+          <div class="rd-navbar-inner rd-navbar-search-wrap">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+              <!-- RD Navbar Brand-->
+              <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-344x67.png"
+                    alt="" width="172" height="33" /></a></div>
+            </div>
+            <!-- RD Navbar Nav-->
+            <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
+              <div class="rd-navbar-search_collapsable">
+                <ul class="rd-navbar-nav">
+                  <li class="active">
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Investigación
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#Productos">Productos Neo</a>
-                        <a class="dropdown-item" href="Ecosistema.html">NeoDEX</a> 
-                        <a class="dropdown-item" href="Grebana.html">Grebana</a>
-                        <a class="dropdown-item" href="https://partners.neofintech.com.co/">Neo Partners</a> 
+                        <a class="dropdown-item" href="#blockchain">Blockchain</a>
+                        <a class="dropdown-item" href="#blockchain">Inteligencia Artificial</a>
                       </div>
                     </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Productos
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#Productos">Productos Neo</a>
+                        <a class="dropdown-item" href="Ecosistema.html">NeoDEX</a>
+                        <a class="dropdown-item" href="Grebana.html">Grebana</a>
+                        <a class="dropdown-item" href="https://partners.neofintech.com.co/">Neo Partners</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Compañía
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="./Nosotros.html">Acerca de Neo</a>
                         <a class="dropdown-item" href="https://shorts.neofintech.com.co/">Neo Shorts</a>
                         <a class="dropdown-item" href="./Soporte.html">Preguntas Frecuentes</a>
                       </div>
                     </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Desarrolladores
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <!-- <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a> -->
                       </div>
                     </div>
-                    </li>
-                    <li>
-                        <a href="https://neo-fintech.com/" class="button button-black button-shadow">
-                          Acceder
-                        </a>
-                    </li>
-                  </ul>
-                </div>
+                  </li>
+                  <li>
+                    <a href="https://neo-fintech.com/" class="button button-black button-shadow">
+                      Acceder
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </nav>
-        </div>
-      </header>
-      <!-- Swiper-->
-      <svg class="defs">
-        <defs>
-          <lineargradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="50%" stop-color="#AA54ED">
-              <animate attributename="stop-color" values="#AA54ED; #5348E2; #AA54ED" dur="5s" repeatcount="indefinite"></animate>
-            </stop>
-            <stop offset="100%" stop-color="#5348E2">
-              <animate attributename="stop-color" values="#5348E2; #AA54ED; #5348E2" dur="5s" repeatcount="indefinite"></animate>
-            </stop>
-          </lineargradient>
-        </defs>
-      </svg>
-      <div class="swiper-container swiper-slider" data-effect="frame-trapeze" data-loop="true" data-autoplay="5500" data-speed="1200" data-mousewheel="false" data-keyboard="true" data-frame-fill="url(#gradient1)">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper-slide-img" style="background-image: url(images/slider-slide-5-1920x1280.jpg);" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }"></div>
-            <div class="swiper-slide-caption text-center context-dark">
-              <h1 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">Conéctate  </h1>
-              <h3 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }">Al desarrollo de startups.</h3>
-              <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }">
-                <!-- <a class="button button-primary button-shadow" href="#" data-custom-scroll-to="features">Boton</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Swiper-->
+    <svg class="defs">
+      <defs>
+        <lineargradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="50%" stop-color="#AA54ED">
+            <animate attributename="stop-color" values="#AA54ED; #5348E2; #AA54ED" dur="5s" repeatcount="indefinite">
+            </animate>
+          </stop>
+          <stop offset="100%" stop-color="#5348E2">
+            <animate attributename="stop-color" values="#5348E2; #AA54ED; #5348E2" dur="5s" repeatcount="indefinite">
+            </animate>
+          </stop>
+        </lineargradient>
+      </defs>
+    </svg>
+    <div class="swiper-container swiper-slider" data-effect="frame-trapeze" data-loop="true" data-autoplay="5500"
+      data-speed="1200" data-mousewheel="false" data-keyboard="true" data-frame-fill="url(#gradient1)">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-slide-img" style="background-image: url(images/slider-slide-5-1920x1280.jpg);"
+            data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }">
+          </div>
+          <div class="swiper-slide-caption text-center context-dark">
+            <h1
+              data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">
+              Conéctate </h1>
+            <h3
+              data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }">
+              Al desarrollo de startups.</h3>
+            <div class="group-lg group-middle"
+              data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }">
+              <!-- <a class="button button-primary button-shadow" href="#" data-custom-scroll-to="features">Boton</a>
                 <a class="button button-black button-shadow" href="#">Boton</a> -->
-              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-img" style="background-image: url(images/slider-slide-6-1920x986.jpg);" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }"></div>
-            <div class="swiper-slide-caption context-dark">
-              <h1 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }" >Educación </h1>
-              <h3 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }" >Financiera para los nuevos mercados.</h3>
-              <!-- <a class="button button-primary button-shadow" href="#" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }">Boton</a> -->
-            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-img" style="background-image: url(images/slider-slide-6-1920x986.jpg);"
+            data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }">
           </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-img" style="background-image: url(images/slider-slide-7-1920x1080.jpg);" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }"></div>
-            <div class="swiper-slide-caption context-dark">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-lg-7">
-                    <h1 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">Neo Shorts</h1>
-                    <h3 class="text-width-2 block-centered" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }">Un blog pensado para ti, donde hablaremos de finanzas e innovación.</h3>
-                    <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }">
-                      <a class="button button-black button-shadow" href="https://neofintech.com.co/index.php/neo-shorts/">Conocer más</a>
-                      
-                    </div>
+          <div class="swiper-slide-caption context-dark">
+            <h1
+              data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">
+              Educación </h1>
+            <h3
+              data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }">
+              Financiera para los nuevos mercados.</h3>
+            <!-- <a class="button button-primary button-shadow" href="#" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }">Boton</a> -->
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-img" style="background-image: url(images/slider-slide-7-1920x1080.jpg);"
+            data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }">
+          </div>
+          <div class="swiper-slide-caption context-dark">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-7">
+                  <h1
+                    data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">
+                    Neo Shorts</h1>
+                  <h3 class="text-width-2 block-centered"
+                    data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }">
+                    Un blog pensado para ti, donde hablaremos de finanzas e innovación.</h3>
+                  <div class="group-lg group-middle"
+                    data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }">
+                    <a class="button button-black button-shadow"
+                      href="https://neofintech.com.co/index.php/neo-shorts/">Conocer más</a>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev linear-icon-chevron-left"></div>
-        <div class="swiper-button-next linear-icon-chevron-right"></div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev linear-icon-chevron-left"></div>
+      <div class="swiper-button-next linear-icon-chevron-right"></div>
+    </div>
 
-     
 
 
-     
 
-      <!-- <section class="blogSection">
-      <div class="container">
-        <div class="card-deck">
-        <div class="card" style="width: 18rem;">
-          <a href="./Ecosistema.html" >
-         
-          <div class="card-body">
-            <h5 class="card-title">Crear un ecosistema de economía digital.</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Más información sobre NeoDEX</h6>
-            
-          </div>
-        </a>
-        </div>
-          <div class="card" style="width: 18rem;">
-            <a href="./Grebana.html">
-           
-            <div class="card-body">
-              <h5 class="card-title">Tokenización en sectores económicos.</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Más información sobre Grebana</h6>
-              
-            </div>
-          </a>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <a href="./Bancos.html">
-           
-            <div class="card-body">
-              <h5 class="card-title">Los Bancos no se reinventan.</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Más información crypto </h6>
-              
-            </div>
-          </a>
-          </div>
-        
-      </div>
-      
-      </div>-->
-      
-      </section> 
-      <section style="background-color: #0b132b; ">
-        <div class="container-fluid">
-          <div class="container justify-content-center">
-            <div class="row ">
-              <div class="col-12 mt-5">
-                <div id='multi-item-example' class="carousel slide carousel-multi-item" data-ride='carousel'>
-        <!--Controls-->
-                    <!-- <div class="controls-top mb-2 d-flex justify-content-center">
+
+
+
+
+    </section>
+    <section style="background-color: #0b132b; ">
+      <div class="container-fluid">
+        <div class="container justify-content-center">
+          <div class="row ">
+            <div class="col-12 mt-5">
+              <div id='multi-item-example' class="carousel slide carousel-multi-item" data-ride='carousel'>
+                <!--Controls-->
+                <!-- <div class="controls-top mb-2 d-flex justify-content-center">
                       <a class="btn " href="#multi-item-example" data-slide="prev"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <polyline points="15 6 9 12 15 18" />
@@ -255,72 +282,72 @@
                         <polyline points="9 6 15 12 9 18" />
                       </svg></a>
                     </div> -->
-                    
-          <!--/.Controls-->
-                  
-        <!-- Indicators	 -->
-                  <!-- <ol class = "carousel-indicators">
+
+                <!--/.Controls-->
+
+                <!-- Indicators	 -->
+                <!-- <ol class = "carousel-indicators">
                     <li data-slide-to ='0' data-target ='#multi-item-example' class="active"></li>
                     <li data-slide-to ='0' data-target ='#multi-item-example'></li>
                     <li data-slide-to ='0' data-target ='#multi-item-example'></li>
                   </ol> -->
-        <!-- /.Indicators -->
-        <!-- Slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <!-- ------------------uno----------------- -->
-                        <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
-                          <img src="images/bitcoin.png" class="mr-3" alt="...">
-                          <div class="media-body">
-                            <h5 class="mt-0" style="color:#f1f1f1;">Bitcoin (BTC)</h5>
-                            <p id="btc">-</p>
-                            <script src="js/btc.js"></script>
-                          </div>
+                <!-- /.Indicators -->
+                <!-- Slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <!-- ------------------uno----------------- -->
+                      <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
+                        <img src="images/bitcoin.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0" style="color:#f1f1f1;">Bitcoin (BTC)</h5>
+                          <p id="btc">-</p>
+                          <script src="js/btc.js"></script>
                         </div>
-                        
-                          
-                          <!-- ------------------uno----------------- -->
-                          <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
-                            <img src="images/ethereum.png" class="mr-3" alt="...">
-                            <div class="media-body">
-                              <h5 class="mt-0" style="color:#f1f1f1;">Ethereum (ETH)</h5>
-                              <p id="ether" >-</p>
-                              <script src="js/ether.js"></script>
-                            </div>
-                          </div>
-
-                          
-                        <!-- ------------------uno----------------- -->
-                        <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
-                          <img src="images/tether.png" class="mr-3" alt="...">
-                          <div class="media-body">
-                            <h5 class="mt-0" style="color:#f1f1f1;">Tether (USDT)</h5>
-                            <p id="usdt">-</p>
-                            <script src="js/usdt.js"></script>
-                          </div>
-                        </div>
-
-                          
                       </div>
-                    </div>
-                    
-                        <!-- Two -->
-                  <div class="carousel-item">
-                      <div class="row">
-                        <!-- ------------------dos----------------- -->
 
-                        <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
-                          <img src="images/Binance.png" class="mr-3" alt="...">
-                          <div class="media-body">
-                            <h5 class="mt-0" style="color:#f1f1f1;">Binance Coin (BNB)</h5>
-                            <p id="bnb">-</p>
-                            <script src="js/bnb.js"></script>
-                          </div>
+
+                      <!-- ------------------uno----------------- -->
+                      <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
+                        <img src="images/ethereum.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0" style="color:#f1f1f1;">Ethereum (ETH)</h5>
+                          <p id="ether">-</p>
+                          <script src="js/ether.js"></script>
                         </div>
+                      </div>
 
 
-                        
+                      <!-- ------------------uno----------------- -->
+                      <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
+                        <img src="images/tether.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0" style="color:#f1f1f1;">Tether (USDT)</h5>
+                          <p id="usdt">-</p>
+                          <script src="js/usdt.js"></script>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <!-- Two -->
+                  <div class="carousel-item">
+                    <div class="row">
+                      <!-- ------------------dos----------------- -->
+
+                      <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
+                        <img src="images/Binance.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0" style="color:#f1f1f1;">Binance Coin (BNB)</h5>
+                          <p id="bnb">-</p>
+                          <script src="js/bnb.js"></script>
+                        </div>
+                      </div>
+
+
+
                       <!-- ------------------dos----------------- -->
                       <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
                         <img src="images/cardano.png" class="mr-3" alt="...">
@@ -331,73 +358,74 @@
                         </div>
                       </div>
 
-                          
-                        <!-- ------------------dos----------------- -->
-                        <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
-                          <img src="images/xrp.png" class="mr-3" alt="...">
-                          <div class="media-body">
-                            <h5 class="mt-0" style="color:#f1f1f1;">XRP (XRP)</h5>
-                            <p id="xrp">-</p>
-                            <script src="js/xrp.js"></script>
-                          </div>
-                        </div>
 
-                          
+                      <!-- ------------------dos----------------- -->
+                      <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
+                        <img src="images/xrp.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0" style="color:#f1f1f1;">XRP (XRP)</h5>
+                          <p id="xrp">-</p>
+                          <script src="js/xrp.js"></script>
+                        </div>
                       </div>
-                    </div>
-                        <!-- third -->
-                <div class="carousel-item">
-                      <div class="row">
 
-                        <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
-                          <img src="images/solana.png" class="mr-3" alt="...">
-                          <div class="media-body">
-                            <h5 class="mt-0" style="color:#f1f1f1;">Solana (SOL)</h5>
-                            <p id="sol">-</p>
-                            <script src="js/sol.js"></script>
-                          </div>
-                        </div>
 
-                        <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
-                          <img src="images/polkadot.png" class="mr-3" alt="...">
-                          <div class="media-body">
-                            <h5 class="mt-0" style="color:#f1f1f1;">Polkadot (DOT)</h5>
-                            <p id="dot">-</p>
-                            <script src="js/dot.js"></script>
-                          </div>
-                        </div>
-        
-                      </div>
                     </div>
-                        <!-- third -->
-        
                   </div>
-        <!-- /.slides -->
+                  <!-- third -->
+                  <div class="carousel-item">
+                    <div class="row">
+
+                      <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
+                        <img src="images/solana.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0" style="color:#f1f1f1;">Solana (SOL)</h5>
+                          <p id="sol">-</p>
+                          <script src="js/sol.js"></script>
+                        </div>
+                      </div>
+
+                      <div class="media" style="padding-left: 120px; padding-right: 120px; padding-bottom: 30px;">
+                        <img src="images/polkadot.png" class="mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0" style="color:#f1f1f1;">Polkadot (DOT)</h5>
+                          <p id="dot">-</p>
+                          <script src="js/dot.js"></script>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- third -->
+
                 </div>
+                <!-- /.slides -->
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class=" object-wrap">
-        <div class="bg-decor d-flex align-items-center justify-content-start" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
-          <!-- <img src="images/bg-decor-4.png" alt=""/> -->
-        </div>
-        <div class="section-lg">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5" data-aos="fade-up" data-aos-duration="3000">
-                <h4 class="heading-decorated">Portafolio de servicios</h4>
-                <p>
-                  Hemos creado un portafolio disruptivo e innovador que te hará parte de la evolución 
-                  de la banca tradicional hacia una economía digital basada en Blockchain e Inteligencia artificial.
+    <section class=" object-wrap">
+      <div class="bg-decor d-flex align-items-center justify-content-start"
+        data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
+        <!-- <img src="images/bg-decor-4.png" alt=""/> -->
+      </div>
+      <div class="section-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5" data-aos="fade-up" data-aos-duration="3000">
+              <h4 class="heading-decorated">Portafolio de servicios</h4>
+              <p>
+                Hemos creado un portafolio disruptivo e innovador que te hará parte de la evolución
+                de la banca tradicional hacia una economía digital basada en Blockchain e Inteligencia artificial.
 
-                </p>
-                <div class="row row-30">
-                  <div class="col-xl-6">
-                    <!-- Blurb minimal-->
-                    <!-- <article class="blurb blurb-minimal">
+              </p>
+              <div class="row row-30">
+                <div class="col-xl-6">
+                  <!-- Blurb minimal-->
+                  <!-- <article class="blurb blurb-minimal">
                       <div class="unit flex-row unit-spacing-md">
                         <div class="unit-left">
                           <div class="blurb-minimal__icon"><span class="icon linear-icon-menu3"></span></div>
@@ -411,10 +439,10 @@
                         </div>
                       </div>
                     </article> -->
-                  </div>
-                  <div class="col-xl-6">
-                    <!-- Blurb minimal-->
-                    <!-- <article class="blurb blurb-minimal">
+                </div>
+                <div class="col-xl-6">
+                  <!-- Blurb minimal-->
+                  <!-- <article class="blurb blurb-minimal">
                       <div class="unit flex-row unit-spacing-md">
                         <div class="unit-left">
                           <div class="blurb-minimal__icon"><span class="icon linear-icon-users2"></span></div>
@@ -428,14 +456,14 @@
                       </div>
                     </article> -->
 
-                  </div>
                 </div>
+              </div>
 
 
-                <div class="row justify-content-md-center">
-                  <div class="col-md-12">
-                    <!-- Linear progress bar-->
-                    <!-- <div class="progress-linear progress-linear-modern">
+              <div class="row justify-content-md-center">
+                <div class="col-md-12">
+                  <!-- Linear progress bar-->
+                  <!-- <div class="progress-linear progress-linear-modern">
                       <div class="progress-header">
                         <p>Dedication</p><span class="progress-value">49</span>
                       </div>
@@ -443,8 +471,8 @@
                         <div class="progress-bar-linear"></div>
                       </div>
                     </div> -->
-                    <!-- Linear progress bar-->
-                    <!-- <div class="progress-linear progress-linear-modern">
+                  <!-- Linear progress bar-->
+                  <!-- <div class="progress-linear progress-linear-modern">
                       <div class="progress-header">
                         <p>Experience</p><span class="progress-value">29</span>
                       </div>
@@ -452,8 +480,8 @@
                         <div class="progress-bar-linear"></div>
                       </div>
                     </div> -->
-                    <!-- Linear progress bar-->
-                    <!-- <div class="progress-linear progress-linear-modern">
+                  <!-- Linear progress bar-->
+                  <!-- <div class="progress-linear progress-linear-modern">
                       <div class="progress-header">
                         <p>Creativity</p><span class="progress-value">86</span>
                       </div>
@@ -461,23 +489,24 @@
                         <div class="progress-bar-linear"></div>
                       </div>
                     </div> -->
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-          
-        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(images/portfolio-original-7-1280x1920.jpg)">
+      </div>
 
-        
 
-        </div>
-        
-      </section>
+      <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+        style="background-image: url(images/portfolio-original-7-1280x1920.jpg)">
 
-      <!-- <section class="section-sm">
+
+
+      </div>
+
+    </section>
+
+    <!-- <section class="section-sm">
         <div class="container">
         <h5>Large image</h5>
         <p>Hemos creado un portafolio disruptivo e innovador que te hará parte de la evolución de la banca tradicional hacia una economía digital basada en Blockchain e Inteligencia artificial.</p>
@@ -486,9 +515,9 @@
         </div>
       </section>
        -->
-      
 
-      <!-- <section class="section-xs section-cta bg text-center text-md-left" id="SectionDos">
+
+    <!-- <section class="section-xs section-cta bg text-center text-md-left" id="SectionDos">
         <div>
           <div class="row row-30 justify-content-between align-items-center">
             <div class="col-12 col-md-8">
@@ -500,33 +529,34 @@
           </div>
         </div>
       </section> -->
-      
-      <section class="section-md  text-center decor-text" data-content="Objetivo">
-        <div class="container" >
-          <h4 class="heading-decorated">Seguridad y responsabilidad.</h4>
-          
-          <div class="row row-30 justify-content-center">
-            <div class="col-sm-10 col-lg-6"><img src="images/ilustracion2.png" alt="" width="650" height="495" data-aos="fade-up" data-aos-duration="3000"/>
-            </div>
-            <div class="col-sm-10 col-lg-6" style="padding-top: 20%;" >
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle " >
-                <div class="unit flex-row unit-spacing-md ">
-                  <div class="unit-left">
-                    <div class="blurb-circle__icon"><span class="icon linear-icon-box"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6">Las tecnologías 4.0</p>
-                    <p>
-                       pueden ser utilizadas para crear una economía más
-                       justa y equitativa, donde la transparencia garantice un futuro más seguro y confiable para todos.
-                    </p>
-                    
-                  </div>
+
+    <section class="section-md  text-center decor-text" data-content="Objetivo">
+      <div class="container">
+        <h4 class="heading-decorated">Seguridad y responsabilidad.</h4>
+
+        <div class="row row-30 justify-content-center">
+          <div class="col-sm-10 col-lg-6"><img src="images/ilustracion2.png" alt="" width="650" height="495"
+              data-aos="fade-up" data-aos-duration="3000" />
+          </div>
+          <div class="col-sm-10 col-lg-6" style="padding-top: 20%;">
+            <!-- Blurb circle-->
+            <article class="blurb blurb-circle ">
+              <div class="unit flex-row unit-spacing-md ">
+                <div class="unit-left">
+                  <div class="blurb-circle__icon"><span class="icon linear-icon-box"></span></div>
                 </div>
-              </article>
-              <!-- Blurb circle-->
-              <!-- <article class="blurb blurb-circle">
+                <div class="unit-body">
+                  <p class="blurb__title heading-6">Las tecnologías 4.0</p>
+                  <p>
+                    pueden ser utilizadas para crear una economía más
+                    justa y equitativa, donde la transparencia garantice un futuro más seguro y confiable para todos.
+                  </p>
+
+                </div>
+              </div>
+            </article>
+            <!-- Blurb circle-->
+            <!-- <article class="blurb blurb-circle">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
                     <div class="blurb-circle__icon"><span class="icon linear-icon-star"></span></div>
@@ -542,415 +572,467 @@
                   </div>
                 </div>
               </article> -->
-              <!-- Blurb circle-->
-              
-            </div>
+            <!-- Blurb circle-->
+
           </div>
         </div>
-      </section>
-      <!--cta-->
-      <!-- Call to Action-->
-      <section class="section-md bg-accent bg-image text-center bg-overlay-darker" style="background-image: url(images/bg-image-8.jpg); background-position: center 50%;">
-        <div class="container">
-          <div class="row justify-content-md-center">
-            <div class="col-md-11 col-lg-9 col-xl-8"> 
-              <h3 class="heading-decorated">Nos preocupamos por ofrecer soluciones personalizadas que se adapten a las necesidades de cada cliente.</h3>
-            </div>
+      </div>
+    </section>
+    <!--cta-->
+    <!-- Call to Action-->
+    <section class="section-md bg-accent bg-image text-center bg-overlay-darker"
+      style="background-image: url(images/bg-image-8.jpg); background-position: center 50%;">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-11 col-lg-9 col-xl-8">
+            <h3 class="heading-decorated">Nos preocupamos por ofrecer soluciones personalizadas que se adapten a las
+              necesidades de cada cliente.</h3>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-md bg-gray-lighter text-center decor-text" data-content="Investig" id="#investigacion"> 
-        <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;x&quot;: -100, &quot;y&quot;: -30, &quot;smoothness&quot;: 30}">
-        </div>
-        <div class="container">
-          <h4 class="heading-decorated">Investigación</h4>
-          <div class="row justify-content-md-center justify-content-lg-between row-50 align-items-center" >
-            
-            <div class="col-md-8 col-lg-6" >
-              <p id="blockchain">Con nuestra investigación buscamos crear un ecosistema financiero digital basado en Blockchain  
-                que fortalezca la confianza y la eficiencia en diferentes sectores económicos.</p>
-              <div id="accordion" role="tablist">
-                      <!-- Bootstrap card-->
-                      <div class="card card-custom" >
-                        <div class="card-custom-heading" id="accordionHeading1" role="tab">
-                          <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse1" aria-controls="accordionCollapse1">Investigación en Blockchain</a>
-                          </h5>
-                        </div>
-                        <div class="card-custom-collapse collapse" id="accordionCollapse1" role="tabpanel" aria-labelledby="accordionHeading1">
-                          <div class="card-custom-body">
-                            <p>
-                              Blockchain permite que las empresas  desarrollen nuevas soluciones y aplicaciones 
-                              basadas en esta tecnología aplicadas a los sectores económicos. 
-                            </p>
+    <section class="section-md bg-gray-lighter text-center decor-text" data-content="Investig" id="#investigacion">
+      <div class="bg-decor d-flex align-items-center justify-content-end"
+        data-parallax-scroll="{&quot;x&quot;: -100, &quot;y&quot;: -30, &quot;smoothness&quot;: 30}">
+      </div>
+      <div class="container">
+        <h4 class="heading-decorated">Investigación</h4>
+        <div class="row justify-content-md-center justify-content-lg-between row-50 align-items-center">
 
-                            <div class="bg-decor d-flex align-items-center justify-content-center"  data-parallax-scroll="{&quot;y&quot;: 70, &quot;x&quot;: 50, &quot;smoothness&quot;: 30}">
-                              <!-- <img src="images/bg-decor-10.png" alt=""/> -->
-                            </div>
-                            <div class="section-lg">
-                              <div >
-                                <div >
-                                  
-                                    <h5 class="heading-decorated">Aplicaciones más populares de la tecnología blockchain</h5>
-                            <div class="row justify-content-md-center">
-                              <div class="col-md-12">
-                                      <!-- Linear progress bar-->
-                                      <div class="progress-linear progress-linear-modern">
-                                        <div class="progress-header">
-                                          <p>Criptomonedas</p><span class="progress-value">70%</span>
-                                        </div>
-                                        <div class="progress-bar-linear-wrap">
-                                          <div class="progress-bar-linear"></div>
-                                        </div>
-                                      </div>
-                                      <!-- Linear progress bar-->
-                                      <div class="progress-linear progress-linear-modern">
-                                        <div class="progress-header">
-                                          <p>Contratos inteligentes</p><span class="progress-value">20%</span>
-                                        </div>
-                                        <div class="progress-bar-linear-wrap">
-                                          <div class="progress-bar-linear"></div>
-                                        </div>
-                                      </div>
-                                      <!-- Linear progress bar-->
-                                      <div class="progress-linear progress-linear-modern">
-                                        <div class="progress-header">
-                                          <p>Gestión de identidad</p><span class="progress-value">10%</span>
-                                        </div>
-                                        <div class="progress-bar-linear-wrap">
-                                          <div class="progress-bar-linear"></div>
-                                        </div>
-                                      </div>
-                              </div>  </div> </div> 
+          <div class="col-md-8 col-lg-6">
+            <p id="blockchain">Con nuestra investigación buscamos crear un ecosistema financiero digital basado en
+              Blockchain
+              que fortalezca la confianza y la eficiencia en diferentes sectores económicos.</p>
+            <div id="accordion" role="tablist">
+              <!-- Bootstrap card-->
+              <div class="card card-custom">
+                <div class="card-custom-heading" id="accordionHeading1" role="tab">
+                  <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse"
+                      data-parent="#accordion" href="#accordionCollapse1"
+                      aria-controls="accordionCollapse1">Investigación en Blockchain</a>
+                  </h5>
+                </div>
+                <div class="card-custom-collapse collapse" id="accordionCollapse1" role="tabpanel"
+                  aria-labelledby="accordionHeading1">
+                  <div class="card-custom-body">
+                    <p>
+                      Blockchain permite que las empresas desarrollen nuevas soluciones y aplicaciones
+                      basadas en esta tecnología aplicadas a los sectores económicos.
+                    </p>
+
+                    <div class="bg-decor d-flex align-items-center justify-content-center"
+                      data-parallax-scroll="{&quot;y&quot;: 70, &quot;x&quot;: 50, &quot;smoothness&quot;: 30}">
+                      <!-- <img src="images/bg-decor-10.png" alt=""/> -->
+                    </div>
+                    <div class="section-lg">
+                      <div>
+                        <div>
+
+                          <h5 class="heading-decorated">Aplicaciones más populares de la tecnología blockchain</h5>
+                          <div class="row justify-content-md-center">
+                            <div class="col-md-12">
+                              <!-- Linear progress bar-->
+                              <div class="progress-linear progress-linear-modern">
+                                <div class="progress-header">
+                                  <p>Criptomonedas</p><span class="progress-value">70%</span>
+                                </div>
+                                <div class="progress-bar-linear-wrap">
+                                  <div class="progress-bar-linear"></div>
+                                </div>
+                              </div>
+                              <!-- Linear progress bar-->
+                              <div class="progress-linear progress-linear-modern">
+                                <div class="progress-header">
+                                  <p>Contratos inteligentes</p><span class="progress-value">20%</span>
+                                </div>
+                                <div class="progress-bar-linear-wrap">
+                                  <div class="progress-bar-linear"></div>
+                                </div>
+                              </div>
+                              <!-- Linear progress bar-->
+                              <div class="progress-linear progress-linear-modern">
+                                <div class="progress-header">
+                                  <p>Gestión de identidad</p><span class="progress-value">10%</span>
+                                </div>
+                                <div class="progress-bar-linear-wrap">
+                                  <div class="progress-bar-linear"></div>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <!-- Bootstrap card-->
-                      <div class="card card-custom">
-                        <div class="card-custom-heading" id="accordionHeading2" role="tab">
-                          <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse2" aria-controls="accordionCollapse2">Investigación en Inteligencia Artificial</a>
-                          </h5>
-                        </div>
-                        <div class="card-custom-collapse collapse" id="accordionCollapse2" role="tabpanel" aria-labelledby="accordionHeading2">
-                          <div class="card-custom-body">
-                            <p>
-                              La Inteligencia Artificial puede aportar muchos beneficios al sector financiero, 
-                              mejorando la precisión en el análisis de riesgos, la prevención de fraudes, 
-                              la toma de decisiones en inversiones, la experiencia del cliente y la gestión de riesgos.
-                            </p>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Bootstrap card-->
-                      
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- Bootstrap card-->
+              <div class="card card-custom">
+                <div class="card-custom-heading" id="accordionHeading2" role="tab">
+                  <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse"
+                      data-parent="#accordion" href="#accordionCollapse2"
+                      aria-controls="accordionCollapse2">Investigación en Inteligencia Artificial</a>
+                  </h5>
+                </div>
+                <div class="card-custom-collapse collapse" id="accordionCollapse2" role="tabpanel"
+                  aria-labelledby="accordionHeading2">
+                  <div class="card-custom-body">
+                    <p>
+                      La Inteligencia Artificial puede aportar muchos beneficios al sector financiero,
+                      mejorando la precisión en el análisis de riesgos, la prevención de fraudes,
+                      la toma de decisiones en inversiones, la experiencia del cliente y la gestión de riesgos.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Bootstrap card-->
+
             </div>
-            <div class="col-md-7 col-lg-5">
-             
-              <img src="images/home-variant-3-555x800.png" alt="" width="555" height="800" data-aos="fade-up" data-aos-duration="3000"/>
-              
+          </div>
+          <div class="col-md-7 col-lg-5">
+
+            <img src="images/home-variant-3-555x800.png" alt="" width="555" height="800" data-aos="fade-up"
+              data-aos-duration="3000" />
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blogSection" id="Productos">
+      <div class="container">
+        <h2 style="text-align: center; padding: 20px; color: aliceblue;">Productos</h2>
+        <p style="text-align: center; padding: 20px; color: aliceblue;">
+          Aplicamos Inteligencia Artificial y Blockchain en modelos diseñados para optimizar la
+          gestión y seguridad de datos en los distintos sectores económicos, logrando así una mayor eficiencia.
+        </p>
+        <div class="row justify-content-md-center">
+          <div class="card-deck" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card" style="width: 18rem;">
+              <a href="./Ecosistema.html">
+                <img src="./images/uno.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Crear un ecosistema de economía digital.</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Más información sobre NeoDEX</h6>
+
+                </div>
+              </a>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <a href="./Grebana.html">
+                <img src="./images/dos.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tokenización en sectores económicos.</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Más información sobre Grebana</h6>
+
+                </div>
+              </a>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <a href="./Bancos.html">
+                <img src="./images/tres.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Los Bancos no se reinventan.</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Más información crypto </h6>
+
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <br><br><br>
+    <section class="section-md  text-center decor-text">
+      <div class="container ">
+        <h3 class="parte">Nuestra Arquitectura de Negocio</h3>
+        <div class="container">
+
+        </div>
+        <h4 style="padding-top: 10%;">Criptofinanciamiento y Venture Capital</h4>
+        <div class="row justify-content-center align-items-center minh-100 ">
+          <div class="col-sm ">
+            <p>Implica invertir en empresas con alto potencial
+              de crecimiento a mediano y largo plazo buscando
+              obtener una rentabilidad y minimizar el riesgo.</p>
+          </div>
+          <div class="col-sm">
+            <img src="./images/grafico.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center align-items-center minh-100"
+          style="background-color: #fff; border-radius: 20px; ">
+          <div class="col col-md-3">
+            <div class="list-group my-5">
+              <a href="#tab1" class="list-group-item list-group-item-action active" data-toggle="list">Identificación y
+                Selección</a>
+              <a href="#tab2" class="list-group-item list-group-item-action" data-toggle="list">Análisis y
+                Evaluación</a>
+              <a href="#tab3" class="list-group-item list-group-item-action" data-toggle="list">Negociación</a>
+              <a href="#tab4" class="list-group-item list-group-item-action" data-toggle="list">Seguimiento</a>
+              <a href="#tab5" class="list-group-item list-group-item-action" data-toggle="list">Crédito Alternativo</a>
+
+            </div><!-- /list-group -->
+          </div><!-- /col -->
+
+
+          <div class="col col-md-9 my-5">
+
+            <div class="tab-content">
+
+              <div id="tab1" class="tab-pane fade show active">
+
+                <p class="HacerParte">
+                  Buscamos empresas emergentes y startups que tengan un modelo de negocio innovador,
+                  un equipo de gestión sólido y un gran potencial de crecimiento.
+                </p>
+
+
+              </div><!-- /tab-pane -->
+
+
+              <div id="tab2" class="tab-pane fade show">
+                <p>Realizamos una evaluación exhaustiva de la empresa, incluyendo su modelo de negocio,
+                  su estrategia de crecimiento, su equipo de gestión y su situación financiera.</p>
+
+
+              </div><!-- /tab-pane -->
+
+              <div id="tab3" class="tab-pane fade show">
+                <p>Negociamos los términos de la inversión, incluyendo la cantidad de financiamiento,
+                  el porcentaje de participación accionaria que se otorgará y otras condiciones.</p>
+
+              </div><!-- /tab-pane -->
+
+              <div id="tab4" class="tab-pane fade show">
+                <p>Una vez que se ha llegado a un acuerdo, trabajamos con la empresa para ayudarla a crecer y alcanzar
+                  su potencial. Proporcionamos experiencia,
+                  conocimientos y contactos para ayudar a la empresa en su desarrollo.</p>
+
+              </div><!-- /tab-pane -->
+
+              <div id="tab5" class="tab-pane fade show">
+                <p>El crédito alternativo es un tipo de financiamiento que se ofrece fuera del sistema bancario
+                  tradicional,
+                  y que utiliza diferentes fuentes de financiamiento para proporcionar préstamos a empresas.</p>
+
+              </div><!-- /tab-pane -->
+
+
+
+            </div><!-- /tab-content -->
+          </div><!-- /col -->
+        </div><!-- /row -->
+
+      </div><!-- /container -->
+    </section>
+
+    <section>
+
+      <section class="section-md bg-lighter text-center decor-text" data-content="Ventajas">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-10 col-xl-8">
+              <h4 class="heading-decorated">¿Cuáles son las oportunidades?</h4>
+
+            </div>
+          </div>
+          <div class="row row-50 justify-content-lg-center">
+            <div class="col-md-6 col-lg-4">
+              <!-- Blurb circle-->
+              <article class="blurb blurb-circle blurb-circle_centered">
+                <div class="blurb-circle__icon"><span class="icon linear-icon-feather"></span></div>
+                <p class="blurb__title">Diversificación</p>
+                <p>Al invertir en una variedad de activos, se puede reducir el riesgo de pérdida en caso
+                  de que uno o varios de los activos no tengan un buen rendimiento. Por lo tanto,
+                  un portafolio diversificado puede ayudar a proteger el capital del inversor.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <!-- Blurb circle-->
+              <article class="blurb blurb-circle blurb-circle_centered">
+                <div class="blurb-circle__icon"><span class="icon linear-icon-return"></span></div>
+                <p class="blurb__title">Maximización del rendimiento</p>
+                <p>
+                  Al incluir una variedad de activos en un portafolio, se pueden aprovechar las oportunidades de
+                  crecimiento y maximizar su rendimiento en un mercado en particular.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <!-- Blurb circle-->
+              <article class="blurb blurb-circle blurb-circle_centered">
+                <div class="blurb-circle__icon"><span class="icon linear-icon-equalizer"></span></div>
+                <p class="blurb__title">Flexibilidad</p>
+                <p>
+                  Un portafolio bien diversificado puede ofrecer más flexibilidad y oportunidades
+                  para ajustar el nivel de riesgo y rendimiento a medida que cambian las condiciones del mercado.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <!-- Blurb circle-->
+              <article class="blurb blurb-circle blurb-circle_centered">
+                <div class="blurb-circle__icon"><span class="icon linear-icon-star"></span></div>
+                <p class="blurb__title">Acceso a una amplia gama de activos</p>
+                <p>
+                  Al construir un portafolio de inversiones se puede acceder a una amplia gama de activos,
+                  desde Venture Capital hasta bienes raíces y materias primas. Esto puede proporcionar una
+                  mayor diversificación del portafolio.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <!-- Blurb circle-->
+              <article class="blurb blurb-circle blurb-circle_centered">
+                <div class="blurb-circle__icon"><span class="icon linear-icon-box"></span></div>
+                <p class="blurb__title">Protección contra la inflación</p>
+                <p>
+                  Al incluir activos que pueden mantener su valor o aumentar su valor en tiempos de inflación,
+                  un portafolio de inversiones puede ayudar a proteger el poder adquisitivo.</p>
+              </article>
             </div>
           </div>
         </div>
       </section>
-      <section class="blogSection" id="Productos" >
-        <div class="container">
-          <h2 style="text-align: center; padding: 20px; color: aliceblue;">Productos</h2>
-          <p style="text-align: center; padding: 20px; color: aliceblue;">
-            Aplicamos Inteligencia Artificial y Blockchain en modelos diseñados para optimizar la 
-            gestión y seguridad de datos en los distintos sectores económicos, logrando así una mayor eficiencia.
-          </p>
-        <div class="row justify-content-md-center">
-          <div class="card-deck" data-aos="fade-up" data-aos-duration="3000">
-          <div class="card" style="width: 18rem;">
-            <a href="./Ecosistema.html" >
-            <img src="./images/uno.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Crear un ecosistema de economía digital.</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Más información sobre NeoDEX</h6>
-              
-            </div>
-          </a>
+      <!-- --------------------------------------------corusel----------------------------- -->
+
+
+
+    </section>
+    <!-- Page Footer-->
+    <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
+      <div class="container">
+        <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+          <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="index.html"><img
+                src="images/logo-white-344x67.png" alt="" width="172" height="33" /></a>
+            <h6>Fintech</h6>
+            <p>Somos una EBT: Empresa de Base Tecnológica apasionada por la investigación y el desarrollo en las últimas
+              tecnologías 4.0.</p>
+
           </div>
-            <div class="card" style="width: 18rem;">
-              <a href="./Grebana.html">
-              <img src="./images/dos.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Tokenización en sectores económicos.</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Más información sobre Grebana</h6>
-                
-              </div>
-            </a>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <a href="./Bancos.html">
-              <img src="./images/tres.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Los Bancos no se reinventan.</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Más información crypto </h6>
-                
-              </div>
-            </a>
-            </div>
-          
+
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6>Usuarios</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://partners.neofintech.com.co/">Neo Partners</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://docs.google.com/presentation/d/1hlFsjo7oa-7aOucbV4113Oi4op2-CoEjYOOgkAAUrwY/edit?usp=sharing">
+                  Recursos
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://shorts.neofintech.com.co/">Neo Shorts</a>
+              </li>
+
+            </ul>
           </div>
-        </div>
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6>Seguridad</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/Guia.html">Guía para inversión responsable</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/politicas.html">Politicas de Privacidad</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/Tratamiento.html">
+                  Tratamiento Legal
+                </a>
+              </li>
 
-        </div>
-        
-        </section>
-     
-       
-       <br><br><br>
-       <section class="section-md  text-center decor-text" >
-        <div class="container ">
-          <h3 class="parte">Nuestra Arquitectura de Negocio</h3>
-          <div class="container">
-            
+            </ul>
           </div>
-          <h4 style="padding-top: 10%;">Criptofinanciamiento y Venture Capital</h4>
-          <div class="row justify-content-center align-items-center minh-100 ">
-            <div class="col-sm ">
-              <p >Implica invertir en empresas con alto potencial
-                de crecimiento a mediano y largo plazo buscando
-                obtener una rentabilidad y minimizar el riesgo.</p>
-            </div>
-            <div class="col-sm">
-              <img src="./images/grafico.png" alt="">
-            </div>
-           
-          </div>
-          
-          <div class="row justify-content-center align-items-center minh-100" style="background-color: #fff; border-radius: 20px; ">
-            <div class="col col-md-3">
-              <div class="list-group my-5">
-                <a href="#tab1" class="list-group-item list-group-item-action active" data-toggle="list">Identificación y Selección</a>
-                <a href="#tab2" class="list-group-item list-group-item-action" data-toggle="list">Análisis y Evaluación</a>
-                <a href="#tab3" class="list-group-item list-group-item-action" data-toggle="list">Negociación</a>
-                <a href="#tab4" class="list-group-item list-group-item-action" data-toggle="list">Seguimiento</a>
-                <a href="#tab5" class="list-group-item list-group-item-action" data-toggle="list">Crédito Alternativo</a>
-                
-              </div><!-- /list-group -->
-            </div><!-- /col -->
-            
-            
-            <div class="col col-md-9 my-5">
-             
-              <div class="tab-content">
-               
-                <div id="tab1" class="tab-pane fade show active">
-                  
-                    <p class="HacerParte">
-                      Buscamos empresas emergentes y startups que tengan un modelo de negocio innovador, 
-                      un equipo de gestión sólido y un gran potencial de crecimiento.
-                    </p>
-                    
-                   
-                  </div><!-- /tab-pane -->
-                
-                
-                <div id="tab2" class="tab-pane fade show">
-                    <p>Realizamos una evaluación exhaustiva de la empresa, incluyendo su modelo de negocio, 
-                      su estrategia de crecimiento, su equipo de gestión y su situación financiera.</p>
-                      
-                    
-                </div><!-- /tab-pane -->
-                
-                <div id="tab3" class="tab-pane fade show">
-                    <p>Negociamos los términos de la inversión, incluyendo la cantidad de financiamiento, 
-                      el porcentaje de participación accionaria que se otorgará y otras condiciones.</p>
-                     
-                </div><!-- /tab-pane -->
 
-                <div id="tab4" class="tab-pane fade show">
-                    <p>Una vez que se ha llegado a un acuerdo, trabajamos con la empresa para ayudarla a crecer y alcanzar su potencial. Proporcionamos experiencia, 
-                      conocimientos y contactos para ayudar a la empresa en su desarrollo.</p>
-                      
-                </div><!-- /tab-pane -->
-
-                <div id="tab5" class="tab-pane fade show">
-                    <p>El crédito alternativo es un tipo de financiamiento que se ofrece fuera del sistema bancario tradicional, 
-                      y que utiliza diferentes fuentes de financiamiento para proporcionar préstamos a empresas.</p>
-                     
-                </div><!-- /tab-pane -->
-
-                
-
-              </div><!-- /tab-content -->
-            </div><!-- /col -->
-          </div><!-- /row -->
-          
-        </div><!-- /container -->
-       </section>
-
-       <section>
-       
-        <section class="section-md bg-lighter text-center decor-text" data-content="Ventajas">
-          <div class="container">
-            <div class="row justify-content-lg-center"> 
-              <div class="col-lg-10 col-xl-8">
-                <h4 class="heading-decorated">¿Cuáles son las oportunidades?</h4>
-                
-              </div>
-            </div>
-            <div class="row row-50 justify-content-lg-center">
-              <div class="col-md-6 col-lg-4">
-                <!-- Blurb circle-->
-                <article class="blurb blurb-circle blurb-circle_centered">
-                  <div class="blurb-circle__icon"><span class="icon linear-icon-feather"></span></div>
-                  <p class="blurb__title">Diversificación</p>
-                  <p>Al invertir en una variedad de activos, se puede reducir el riesgo de pérdida en caso 
-                    de que uno o varios de los activos no tengan un buen rendimiento. Por lo tanto, 
-                    un portafolio diversificado puede ayudar a proteger el capital del inversor.
-                  </p>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <!-- Blurb circle-->
-                <article class="blurb blurb-circle blurb-circle_centered">
-                  <div class="blurb-circle__icon"><span class="icon linear-icon-return"></span></div>
-                  <p class="blurb__title">Maximización del rendimiento</p>
-                  <p>
-                    Al incluir una variedad de activos en un portafolio, se pueden aprovechar las oportunidades de 
-                    crecimiento y maximizar su rendimiento en un mercado en particular. 
-                  </p>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <!-- Blurb circle-->
-                <article class="blurb blurb-circle blurb-circle_centered">
-                  <div class="blurb-circle__icon"><span class="icon linear-icon-equalizer"></span></div>
-                  <p class="blurb__title">Flexibilidad</p>
-                  <p>
-                    Un portafolio bien diversificado puede ofrecer más flexibilidad y oportunidades 
-                    para ajustar el nivel de riesgo y rendimiento a medida que cambian las condiciones del mercado.
-                  </p>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <!-- Blurb circle-->
-                <article class="blurb blurb-circle blurb-circle_centered">
-                  <div class="blurb-circle__icon"><span class="icon linear-icon-star"></span></div>
-                  <p class="blurb__title">Acceso a una amplia gama de activos</p>
-                  <p>
-                    Al construir un portafolio de inversiones se puede acceder a una amplia gama de activos, 
-                    desde Venture Capital hasta bienes raíces y materias primas. Esto puede proporcionar una 
-                    mayor diversificación del portafolio.
-                  </p>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <!-- Blurb circle-->
-                <article class="blurb blurb-circle blurb-circle_centered">
-                  <div class="blurb-circle__icon"><span class="icon linear-icon-box"></span></div>
-                  <p class="blurb__title">Protección contra la inflación</p>
-                  <p>
-                    Al incluir activos que pueden mantener su valor o aumentar su valor en tiempos de inflación, 
-                    un portafolio de inversiones puede ayudar a proteger el poder adquisitivo.</p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- --------------------------------------------corusel----------------------------- -->
-        
-
-
-        </section>
-      <!-- Page Footer-->
-      <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
-        <div class="container">
-          <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="index.html"><img src="images/logo-white-344x67.png" alt="" width="172" height="33"/></a>
-              <h6>Fintech</h6>
-              <p>Somos una EBT: Empresa de Base Tecnológica apasionada por la investigación y el desarrollo en las últimas tecnologías 4.0.</p>
-            
-            </div>
-            
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6>Usuarios</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://partners.neofintech.com.co/">Neo Partners</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://www.figma.com/file/k49o5IiqZ044IWdepXh4xJ/Presentaci%C3%B3n-Portafolio-de-Inversi%C3%B3n-NEO?node-id=0%3A1&t=00HRnmUmrSLA8A7Y-1">
-                    Recursos
-                  </a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/">Neo Shorts</a></li>
-                
-              </ul>
-            </div>
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6>Seguridad</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/Guia.html">Guía para inversión responsable</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/politicas.html">Politicas de Privacidad</a></li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M12 5v14" />
-                    </svg>
-                    <a href="./html/Tratamiento.html">
-                      Tratamiento Legal
-                    </a></li>
-                
-              </ul>
-            </div>
-           
-            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
-              <h6>Compañía</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Nosotros.html">Acerca de Neo</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Soporte.html">Preguntas Frecuentes</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Ecosistema.html">NeoDEX</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/vistatrader.html">Vista Trader</a></li>
-                <!-- <li>
+          <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+            <h6>Compañía</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Nosotros.html">Acerca de Neo</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Soporte.html">Preguntas Frecuentes</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Ecosistema.html">NeoDEX</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/vistatrader.html">Vista Trader</a>
+              </li>
+              <!-- <li>
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 5v14" />
@@ -962,95 +1044,112 @@
                     <path d="M12 5v14" />
                   </svg>
                   <a href="https://drive.google.com/file/d/1HeaQwmVL3i5rFhZNVKNr0Kqo5X_5PRL0/view?usp=share_link">Formularia Vinculación</a></li> -->
-                
-                
-              </ul>
-            </div>
+
+
+            </ul>
           </div>
-
-          <!-- ---------------------fila dos--------------------------- -->
-          <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
-             
-              <h6>Aprende en nuestras redes:</h6>
-              <a href="https://www.instagram.com/neofintechla/"><img src="images/instagram.png" alt=""></a> 
-              <a href="https://twitter.com/NeoFintechLA"><img src="images/gorjeo.png" alt="" style=" margin-left: 20px;"> </a>
-              
-            </div>
-            
-          
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6> Aprende</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/introduccion-a-blockchain-y-criptoactivos/">
-                    Blockchain y Criptoactivos
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/bitcoin-historia-y-funcionamiento/">
-                    Bitcoin
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/altcoins-diversificacion-y-caracteristicas-principales/">
-                    Altcoins
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/tokens-la-creacion-de-activos-digitales-personalizados/">
-                    Tokens
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/smart-contracts-contratos-inteligentes-en-blockchain/">
-                    Smart Contracts
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- ---------------------Fin fila dos---------------------- -->
-
-
         </div>
-      </section>
 
-      
-    </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- ---------------------fila dos--------------------------- -->
+        <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+          <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+
+            <h6>Aprende en nuestras redes:</h6>
+            <a href="https://www.instagram.com/neofintechla/"><img src="images/instagram.png" alt=""></a>
+            <a href="https://twitter.com/NeoFintechLA"><img src="images/gorjeo.png" alt="" style=" margin-left: 20px;">
+            </a>
+
+          </div>
+
+
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6> Aprende</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/04/introduccion-a-blockchain-y-criptoactivos/">
+                  Blockchain y Criptoactivos
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/bitcoin-historia-y-funcionamiento/">
+                  Bitcoin
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/altcoins-diversificacion-y-caracteristicas-principales/">
+                  Altcoins
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/tokens-la-creacion-de-activos-digitales-personalizados/">
+                  Tokens
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/smart-contracts-contratos-inteligentes-en-blockchain/">
+                  Smart Contracts
+                </a>
+              </li>
+            </ul>
+            <a href="./simulador.html">simulador</a>
+          </div>
+        </div>
+        <!-- ---------------------Fin fila dos---------------------- -->
+
+
+      </div>
+    </section>
+
+
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Javascript-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      easing:'ease-out-back',
-      duration:1000
+      easing: 'ease-out-back',
+      duration: 1000
     });
   </script>
- 
- 
-  </body>
+
+
+</body>
+
 </html>
