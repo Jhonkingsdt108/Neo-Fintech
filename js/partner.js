@@ -16,7 +16,7 @@ function recompensasPartnerInp() {
     // -------------------- se recibe el valor y se calcula el parcentaje---------------
     // partner---------------
     var partnerInp = (inp * part).toFixed(0);
-    document.getElementById("partner").innerHTML = ('$ ' + partnerInp);
+    document.getElementById("partnerL").innerHTML = ('$ ' + partnerInp);
     console.log(partnerInp)
 };
 // -------------PARTNER-----------------------------

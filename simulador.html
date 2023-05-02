@@ -203,68 +203,7 @@
                             <h4 class="heading-decorated">Neo Fintech </h4>
                             <p>Descripcion corta de donde salen estos calculos y que valores sonlos que voy a ingresar
                             </p>
-                            <div class="row row-30">
-                                <div class="col-xl-6">
-                                    <label for="">Numero de colocacion por partner en tu equipo
-                                        <input type="text" placeholder="$" id="colEquipo" class="inputf">
-                                    </label>
-                                </div>
-                                <div class="col-xl-6">
-                                    <label for="">Numero de Partners de equipo comercial
-                                        <input type="text" placeholder="" id="numPartners" class="inputf">
-                                    </label>
-                                </div>
-                                <div class="col-xl-6">
-                                    <button class="button button-black button-shadow"
-                                        onclick="volVentas();">Calcular</button>
-                                </div>
 
-                            </div>
-                            <div class="row row-30">
-                                <div class="col-xl-6">
-                                    <p>Numero de dinero en volumen de equipo</p>
-                                    <label for="" id="screen"></label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
-                style="background-image: url(images/portfolio-original-7-1280x1920.jpg)"></div>
-        </section>
-
-
-
-
-        <!-- <section class="object-wrap decor-text" data-content="Nosotros">
-
-            <div class="section-lg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h4 class="heading-decorated">Recompensas Inp </h4>
-
-                            <div class="row row-30">
-                                <div class="col-xl-6">
-                                    <label for="">Numero de dinero por invitado (Recompensas Inp)
-                                        <input type="text" placeholder="$" id="numInp" class="inputf">
-                                    </label>
-                                </div>
-
-                                <div class="col-xl-6">
-                                    <button class="button button-black button-shadow"
-                                        onclick="recompensasPartnerInp()">Calcular</button>
-                                </div>
-
-                            </div>
-                            <div class="row row-30">
-                                <div class="col-xl-6">
-                                    <p>Partner</p>
-                                    <label for="" id="partner"></label>
-                                </div>
-
-                            </div>
 
                         </div>
                     </div>
@@ -272,393 +211,682 @@
             </div>
             <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
                 style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
-        </section> -->
-
-
-
-
-
+        </section>
 
         <section>
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="partner-tab" data-bs-toggle="tab" data-bs-target="#partner"
+                            type="button" role="tab" aria-controls="partner" aria-selected="true"
+                            style="background-color: #9c63ff; border-radius: 15px; color: #fff;">Partner</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="junior-tab" data-bs-toggle="tab" data-bs-target="#junior"
+                            type="button" role="tab" aria-controls="junior" aria-selected="false">Junior</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="middle-tab" data-bs-toggle="tab" data-bs-target="#middle"
+                            type="button" role="tab" aria-controls="middle" aria-selected="false">Middle</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="juniorD-tab" data-bs-toggle="tab" data-bs-target="#juniorD"
+                            type="button" role="tab" aria-controls="juniorD" aria-selected="false">Director
+                            Junior</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="seniorD-tab" data-bs-toggle="tab" data-bs-target="#seniorD"
+                            type="button" role="tab" aria-controls="seniorD" aria-selected="false">Director
+                            Senior</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="masterD-tab" data-bs-toggle="tab" data-bs-target="#masterD"
+                            type="button" role="tab" aria-controls="masterD" aria-selected="false">Director
+                            Master</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="embajador-tab" data-bs-toggle="tab" data-bs-target="#embajador"
+                            type="button" role="tab" aria-controls="embajador" aria-selected="false">Embajador</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="partner" role="tabpanel" aria-labelledby="partner-tab">
+                        <div class="section-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <h4 class="heading-decorated">Partner Inp </h4>
+                                        <script src="./js/partner.js"></script>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <label for="">Numero de dinero por invitado (Recompensas Inp)
+                                                    <input type="text" placeholder="$" id="numInp" class="inputf">
+                                                </label>
 
 
-            <!--cta-->
-            <!-- Call to Action-->
+
+                                                <button class="button button-black button-shadow"
+                                                    onclick="recompensasPartnerInp()">Calcular</button>
+                                            </div>
 
 
 
-            <section>
-                <div class="container">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">Partner</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Junior</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                                type="button" role="tab" aria-controls="contact" aria-selected="false">Middle</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
+                                        </div>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <p>Total</p>
+                                                <label for="" id="partnerL">$</label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+                            style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
+                    </div>
+                    <div class="tab-pane fade" id="junior" role="tabpanel" aria-labelledby="junior-tab">
+                        <div class="section-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <h4 class="heading-decorated">Junior Inp </h4>
+                                        <script src="./js/junior.js?1"></script>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <label for="">Numero de dinero por invitado (Recompensas Inp)
+                                                    <input type="text" placeholder="$" id="numInp1" class="inputf">
+                                                </label>
+
+                                                <button class="button button-black button-shadow"
+                                                    onclick="recompensasJuniorInp()">Calcular</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <p>Total</p>
+                                                <label for="" id="juniorL">$</label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+                            style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
+                    </div>
+                    <div class="tab-pane fade" id="middle" role="tabpanel" aria-labelledby="middle-tab">
+                        <div class="section-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <h4 class="heading-decorated">Middle Inp </h4>
+                                        <script src="./js/middle.js"></script>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <label for="">Numero de dinero por invitado (Recompensas Inp)
+                                                    <input type="text" placeholder="$" id="numInp2" class="inputf">
+                                                </label>
+                                                <label for="">Numero de colocacion por partner en tu equipo
+                                                    <input type="text" placeholder="$" id="colEquipo" class="inputf">
+                                                </label>
+
+
+                                                <label for="">Numero de Partners de equipo comercial
+                                                    <input type="text" placeholder="" id="numPartners" class="inputf">
+                                                </label>
+
+                                                <button class="button button-black button-shadow"
+                                                    onclick="recompensasMiddleInp()">Calcular</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <p>Comision directos</p>
+                                                <label for="" id="directos">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Volumen</p>
+                                                <label for="" id="volMiddle">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Airdrop</p>
+                                                <label for="" id="airDrop">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Total</p>
+                                                <label for="" id="middleL">$</label>
+                                            </div>
+                                            <!-- <div class="col-xl-6">
+                                                <p>Valor</p>
+                                                <label for="" id="screen">$</label>
+                                            </div> -->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+                            style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
+                    </div>
+                    <div class="tab-pane fade" id="juniorD" role="tabpanel" aria-labelledby="juniorD-tab">
+                        <div class="section-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <h4 class="heading-decorated">Director Junior Inp </h4>
+                                        <script src="./js/directJunior.js"></script>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <label for="">Numero de dinero por invitado (Recompensas Inp)
+                                                    <input type="text" placeholder="$" id="numInp3" class="inputf">
+                                                </label>
+                                                <label for="">Numero de colocacion por partner en tu equipo
+                                                    <input type="text" placeholder="$" id="colEquipo1" class="inputf">
+                                                </label>
+
+
+                                                <label for="">Numero de Partners de equipo comercial
+                                                    <input type="text" placeholder="" id="numPartners1" class="inputf">
+                                                </label>
+
+                                                <button class="button button-black button-shadow"
+                                                    onclick="recompensasDirectJuniorInp()">Calcular</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <p>Comision directos</p>
+                                                <label for="" id="directos1">$ 0</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Volumen</p>
+                                                <label for="" id="volMiddle1">$ 0</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Airdrop</p>
+                                                <label for="" id="airDrop1">$ 0</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Rendimiento Mensual</p>
+                                                <label for="" id="rendMes">$ 0</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Total</p>
+                                                <label for="" id="middleL1">$ 0</label>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+                            style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
+
+                    </div>
+                    <div class="tab-pane fade" id="seniorD" role="tabpanel" aria-labelledby="seniorD-tab">
+                        <div class="section-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <h4 class="heading-decorated">Director Senior Inp </h4>
+                                        <script src="./js/directSenior.js"></script>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <label for="">Numero de dinero por invitado (Recompensas Inp)
+                                                    <input type="text" placeholder="$" id="numInpSenior" class="inputf">
+                                                </label>
+                                                <label for="">Numero de colocacion por partner en tu equipo
+                                                    <input type="text" placeholder="$" id="colEquipoSenior"
+                                                        class="inputf">
+                                                </label>
+
+
+                                                <label for="">Numero de Partners de equipo comercial
+                                                    <input type="text" placeholder="" id="numPartnersSenior"
+                                                        class="inputf">
+                                                </label>
+
+                                                <button class="button button-black button-shadow"
+                                                    onclick="recompensasSeniorInp()">Calcular</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <p>Comision directos</p>
+                                                <label for="" id="directos3">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Volumen</p>
+                                                <label for="" id="volMiddle3">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Airdrop</p>
+                                                <label for="" id="airDrop3">$ 0</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Rendimiento Mensual</p>
+                                                <label for="" id="rendMes3">$ 0</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Total</p>
+                                                <label for="" id="middleL3">$</label>
+                                            </div>
+                                            <!-- <div class="col-xl-6">
+                                                <p>Valor</p>
+                                                <label for="" id="screen">$</label>
+                                            </div> -->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+                            style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
+                    </div>
+                    <div class="tab-pane fade" id="masterD" role="tabpanel" aria-labelledby="masterD-tab">
+                        <div class="section-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <h4 class="heading-decorated">Director Master Inp </h4>
+                                        <script src="./js/directMaster.js"></script>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <label for="">Numero de dinero por invitado (Recompensas Inp)
+                                                    <input type="text" placeholder="$" id="numInpMaster" class="inputf">
+                                                </label>
+                                                <label for="">Numero de colocacion por partner en tu equipo
+                                                    <input type="text" placeholder="$" id="colEquipoMaster"
+                                                        class="inputf">
+                                                </label>
+
+
+                                                <label for="">Numero de Partners de equipo comercial
+                                                    <input type="text" placeholder="" id="numMaster" class="inputf">
+                                                </label>
+
+                                                <button class="button button-black button-shadow"
+                                                    onclick="recompensasMasterInp()">Calcular</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <p>Comision directos</p>
+                                                <label for="" id="directosMaster">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Volumen</p>
+                                                <label for="" id="volMiddleMaster">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Airdrop</p>
+                                                <label for="" id="airDropMaster">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Rendimiento Mensual</p>
+                                                <label for="" id="rendMesMaster">$ 0</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Total</p>
+                                                <label for="" id="middleLMaster">$</label>
+                                            </div>
+                                            <!-- <div class="col-xl-6">
+                                                <p>Valor</p>
+                                                <label for="" id="screen">$</label>
+                                            </div> -->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+                            style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
+                    </div>
+                    <div class="tab-pane fade" id="embajador" role="tabpanel" aria-labelledby="embajador-tab">
+                        <div class="section-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <h4 class="heading-decorated">Embajador Inp </h4>
+                                        <script src="./js/embajador.js"></script>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <label for="">Numero de dinero por invitado (Recompensas Inp)
+                                                    <input type="text" placeholder="$" id="numInpEmbajador"
+                                                        class="inputf">
+                                                </label>
+                                                <label for="">Numero de colocacion por partner en tu equipo
+                                                    <input type="text" placeholder="$" id="colEquipoEmbajador"
+                                                        class="inputf">
+                                                </label>
+
+
+                                                <label for="">Numero de Partners de equipo comercial
+                                                    <input type="text" placeholder="" id="numEmbajador" class="inputf">
+                                                </label>
+
+                                                <button class="button button-black button-shadow"
+                                                    onclick="recompensasEmbajadorInp()">Calcular</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="row row-30">
+                                            <div class="col-xl-6">
+                                                <p>Comision directos</p>
+                                                <label for="" id="directosEmbajador">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Volumen</p>
+                                                <label for="" id="volEmbajador">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Airdrop</p>
+                                                <label for="" id="airDropEmbajador">$</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Rendimiento Mensual</p>
+                                                <label for="" id="rendMesEmbajador">$ 0</label>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <p>Total</p>
+                                                <label for="" id="middleLEmbajador">$</label>
+                                            </div>
+                                            <!-- <div class="col-xl-6">
+                                                <p>Valor</p>
+                                                <label for="" id="screen">$</label>
+                                            </div> -->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+                            style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <div class="container">
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    </div>
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="section-lg">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <h4 class="heading-decorated">Recompensas Inp </h4>
-                                            <script src="./js/partner.js"></script>
-                                            <div class="row row-30">
-                                                <div class="col-xl-6">
-                                                    <label for="">Numero de dinero por invitado (Recompensas Inp)
-                                                        <input type="text" placeholder="$" id="numInp" class="inputf">
-                                                    </label>
-                                                </div>
 
-                                                <div class="col-xl-6">
-                                                    <button class="button button-black button-shadow"
-                                                        onclick="recompensasPartnerInp()">Calcular</button>
-                                                </div>
-
-                                            </div>
-                                            <div class="row row-30">
-                                                <div class="col-xl-6">
-                                                    <p>Partner</p>
-                                                    <label for="" id="partner"></label>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
-                                style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
-                        </div>
-
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <div class="section-lg">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <h4 class="heading-decorated">Recompensas Inp </h4>
-                                                <script src="./js/junior.js?1"></script>
-                                                <div class="row row-30">
-                                                    <div class="col-xl-6">
-                                                        <label for="">Numero de dinero por invitado (Recompensas Inp)
-                                                            <input type="text" placeholder="$" id="numInp1"
-                                                                class="inputf">
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="col-xl-6">
-                                                        <button class="button button-black button-shadow"
-                                                            onclick="recompensasJuniorInp()">Calcular</button>
-                                                    </div>
-
-                                                </div>
-                                                <div class="row row-30">
-                                                    <div class="col-xl-6">
-                                                        <p>Junior</p>
-                                                        <label for="" id="junior"></label>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
-                                    style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            <div class="section-lg">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <h4 class="heading-decorated">Recompensas Inp </h4>
-                                            <script src="./js/middle.js"></script>
-                                            <div class="row row-30">
-                                                <div class="col-xl-6">
-                                                    <label for="">Numero de dinero por invitado (Recompensas Inp)
-                                                        <input type="text" placeholder="$" id="numInp2" class="inputf">
-                                                    </label>
-                                                </div>
-
-                                                <div class="col-xl-6">
-                                                    <button class="button button-black button-shadow"
-                                                        onclick="recompensasMiddleInp()">Calcular</button>
-                                                </div>
-
-                                            </div>
-                                            <div class="row row-30">
-                                                <div class="col-xl-6">
-                                                    <p>Volumen</p>
-                                                    <label for="" id="volMiddle"></label>
-                                                </div>
-                                                <div class="col-xl-6">
-                                                    <p>Airdrop</p>
-                                                    <label for="" id="airDrop"></label>
-                                                </div>
-                                                <div class="col-xl-6">
-                                                    <p>Total</p>
-                                                    <label for="" id="middle"></label>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
-                                style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-
-            <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
-                <div class="container">
-                    <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-                        <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="index.html"><img
-                                    src="images/logo-white-344x67.png" alt="" width="172" height="33" /></a>
-                            <h6>Fintech</h6>
-                            <p>Somos una EBT: Empresa de Base Tecnológica apasionada por la investigación y el
-                                desarrollo en
-                                las últimas tecnologías 4.0.</p>
-
-                        </div>
-
-                        <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-                            <h6>Usuarios</h6>
-                            <ul class="list-xxs">
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="https://partners.neofintech.com.co/">Neo Partners</a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a
-                                        href="https://www.figma.com/file/k49o5IiqZ044IWdepXh4xJ/Presentaci%C3%B3n-Portafolio-de-Inversi%C3%B3n-NEO?node-id=0%3A1&t=00HRnmUmrSLA8A7Y-1">
-                                        Recursos
-                                    </a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="https://shorts.neofintech.com.co/">Neo Shorts</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-                            <h6>Seguridad</h6>
-                            <ul class="list-xxs">
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="./html/Guia.html">Guía para inversión responsable</a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="./html/politicas.html">Politicas de Privacidad</a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="./html/Tratamiento.html">
-                                        Tratamiento Legal
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
-                            <h6>Compañía</h6>
-                            <ul class="list-xxs">
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="./Nosotros.html">Acerca de Neo</a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="./Soporte.html">Preguntas Frecuentes</a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="./Ecosistema.html">NeoDEX</a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a href="./html/vistatrader.html">Vista Trader</a>
-                                </li>
-
-
-                            </ul>
                         </div>
                     </div>
 
-                    <!-- ---------------------fila dos--------------------------- -->
-                    <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-                        <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
-                            <h6>Aprende en nuestras redes:</h6>
-                            <a href="https://www.instagram.com/neofintechla/"><img src="images/instagram.png"
-                                    alt=""></a>
-                            <a href="https://twitter.com/NeoFintechLA"><img src="images/gorjeo.png" alt=""
-                                    style=" margin-left: 20px;"> </a>
-
-                        </div>
-
-
-                        <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-                            <h6> Aprende</h6>
-                            <ul class="list-xxs">
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a
-                                        href="https://shorts.neofintech.com.co/index.php/2023/04/04/introduccion-a-blockchain-y-criptoactivos/">
-                                        Blockchain y Criptoactivos
-                                    </a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a
-                                        href="https://shorts.neofintech.com.co/index.php/2023/04/04/bitcoin-historia-y-funcionamiento/">
-                                        Bitcoin
-                                    </a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a
-                                        href="https://shorts.neofintech.com.co/index.php/2023/04/05/altcoins-diversificacion-y-caracteristicas-principales/">
-                                        Altcoins
-                                    </a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a
-                                        href="https://shorts.neofintech.com.co/index.php/2023/04/05/tokens-la-creacion-de-activos-digitales-personalizados/">
-                                        Tokens
-                                    </a>
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 5v14" />
-                                    </svg>
-                                    <a
-                                        href="https://shorts.neofintech.com.co/index.php/2023/04/05/smart-contracts-contratos-inteligentes-en-blockchain/">
-                                        Smart Contracts
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <!-- ---------------------Fin fila dos---------------------- -->
 
 
                 </div>
-            </section>
+            </div>
+        </section>
+
+
+
+        <!-- ------------------------------footer--------------------------------------------- -->
+
+        <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
+            <div class="container">
+                <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+                    <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="index.html"><img
+                                src="images/logo-white-344x67.png" alt="" width="172" height="33" /></a>
+                        <h6>Fintech</h6>
+                        <p>Somos una EBT: Empresa de Base Tecnológica apasionada por la investigación y el
+                            desarrollo en
+                            las últimas tecnologías 4.0.</p>
+
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+                        <h6>Usuarios</h6>
+                        <ul class="list-xxs">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="https://partners.neofintech.com.co/">Neo Partners</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a
+                                    href="https://www.figma.com/file/k49o5IiqZ044IWdepXh4xJ/Presentaci%C3%B3n-Portafolio-de-Inversi%C3%B3n-NEO?node-id=0%3A1&t=00HRnmUmrSLA8A7Y-1">
+                                    Recursos
+                                </a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="https://shorts.neofintech.com.co/">Neo Shorts</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+                        <h6>Seguridad</h6>
+                        <ul class="list-xxs">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="./html/Guia.html">Guía para inversión responsable</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="./html/politicas.html">Politicas de Privacidad</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="./html/Tratamiento.html">
+                                    Tratamiento Legal
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+                        <h6>Compañía</h6>
+                        <ul class="list-xxs">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="./Nosotros.html">Acerca de Neo</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="./Soporte.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="./Ecosistema.html">NeoDEX</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a href="./html/vistatrader.html">Vista Trader</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ---------------------fila dos--------------------------- -->
+                <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+                    <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+
+                        <h6>Aprende en nuestras redes:</h6>
+                        <a href="https://www.instagram.com/neofintechla/"><img src="images/instagram.png" alt=""></a>
+                        <a href="https://twitter.com/NeoFintechLA"><img src="images/gorjeo.png" alt=""
+                                style=" margin-left: 20px;"> </a>
+
+                    </div>
+
+
+                    <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+                        <h6> Aprende</h6>
+                        <ul class="list-xxs">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a
+                                    href="https://shorts.neofintech.com.co/index.php/2023/04/04/introduccion-a-blockchain-y-criptoactivos/">
+                                    Blockchain y Criptoactivos
+                                </a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a
+                                    href="https://shorts.neofintech.com.co/index.php/2023/04/04/bitcoin-historia-y-funcionamiento/">
+                                    Bitcoin
+                                </a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a
+                                    href="https://shorts.neofintech.com.co/index.php/2023/04/05/altcoins-diversificacion-y-caracteristicas-principales/">
+                                    Altcoins
+                                </a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a
+                                    href="https://shorts.neofintech.com.co/index.php/2023/04/05/tokens-la-creacion-de-activos-digitales-personalizados/">
+                                    Tokens
+                                </a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                                <a
+                                    href="https://shorts.neofintech.com.co/index.php/2023/04/05/smart-contracts-contratos-inteligentes-en-blockchain/">
+                                    Smart Contracts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ---------------------Fin fila dos---------------------- -->
+
+
+            </div>
+        </section>
+
 
 
     </div>
+
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
