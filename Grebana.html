@@ -1,288 +1,329 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <!-- Site Title-->
-    <title>Grebana</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="scss/style.scss">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-    <meta http-equiv="Expires" content="0">
-      <meta http-equiv="Last-Modified" content="0">
-      <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-      <meta http-equiv="Pragma" content="no-cache">
-  </head>
-  <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="cssload-container">
-        <svg class="filter" version="1.1">
-          <defs>
-            <filter id="gooeyness">
-              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
-              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness"></fecolormatrix>
-              <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
-            </filter>
-          </defs>
-        </svg>
-        
-        <div class="dots">
-          <div class="dot mainDot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-        <p>Cargando...</p>
+
+<head>
+  <!-- Site Title-->
+  <title>Grebana</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Stylesheets-->
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="scss/style.scss">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="cssload-container">
+      <svg class="filter" version="1.1">
+        <defs>
+          <filter id="gooeyness">
+            <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+            <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness">
+            </fecolormatrix>
+            <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
+          </filter>
+        </defs>
+      </svg>
+
+      <div class="dots">
+        <div class="dot mainDot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
       </div>
+      <p>Cargando...</p>
     </div>
-    <!-- Page-->
-    <div class="page">
-      
-      <header class="page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px" data-lg-stick-up-offset="35px">
-            <!-- RD Navbar Top Panel-->
-            
-            <div class="rd-navbar-inner rd-navbar-search-wrap">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-344x67.png" alt="" width="172" height="33"/></a></div>
-              </div>
-              <!-- RD Navbar Nav-->
-              <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
-                <div class="rd-navbar-search_collapsable">
-                  <ul class="rd-navbar-nav">
-                    
-                    <li class="active">
-                      <div class="dropdown show">
-                        <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Investigación
-                        </a>
-                      
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="index.html#blockchain">Blockchain</a>
-                          <a class="dropdown-item" href="index.html#blockchain">Inteligencia Artificial</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Servicios
+  </div>
+  <!-- Page-->
+  <div class="page">
+
+    <header class="page-header">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+          data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static"
+          data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false"
+          data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px"
+          data-lg-stick-up-offset="35px">
+          <!-- RD Navbar Top Panel-->
+
+          <div class="rd-navbar-inner rd-navbar-search-wrap">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+              <!-- RD Navbar Brand-->
+              <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-344x67.png"
+                    alt="" width="172" height="33" /></a></div>
+            </div>
+            <!-- RD Navbar Nav-->
+            <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
+              <div class="rd-navbar-search_collapsable">
+                <ul class="rd-navbar-nav">
+
+                  <li class="active">
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Investigación
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="index.html#Productos">Productos Neo</a>
-                        <a class="dropdown-item" href="Ecosistema.html">NeoDEX</a> 
-                        <a class="dropdown-item" href="Grebana.html">Grebana</a>
-                        <a class="dropdown-item" href="https://partners.neofintech.com.co/">Neo Partners</a> 
+                        <a class="dropdown-item" href="index.html#blockchain">Blockchain</a>
+                        <a class="dropdown-item" href="index.html#blockchain">Inteligencia Artificial</a>
                       </div>
                     </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Servicios
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="index.html#Productos">Productos Neo</a>
+                        <a class="dropdown-item" href="Ecosistema.html">NeoDEX</a>
+                        <a class="dropdown-item" href="Grebana.html">Grebana</a>
+                        <a class="dropdown-item" href="https://partners.neofintech.com.co/">Neo Partners</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Compañía
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="./Nosotros.html">Acerca de Neo</a>
                         <a class="dropdown-item" href="https://shorts.neofintech.com.co/">Neo Shorts</a>
                         <a class="dropdown-item" href="./Soporte.html">Preguntas Frecuentes</a>
-                        
+
                       </div>
                     </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Desarrolladores
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <!-- <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a> -->
                       </div>
                     </div>
-                    </li>
-                    <li>
-                      <a href="https://neo-fintech.com/" class="button button-black button-shadow">
-                        Acceder
-                      </a>
                   </li>
-                  </ul>
-                </div>
+                  <li>
+                    <a href="https://neo-fintech.com/" class="button button-black button-shadow">
+                      Acceder
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </nav>
-        </div>
-      </header>
-      <main style="background-color: #fff;">
-        <section class="section parallax-container context-dark" data-parallax-img="./images/backgrebana.jpg">
-            <div class="parallax-content parallax-header">
-              <div class="parallax-header__inner context-dark text-center">
-                <div class="parallax-header__content">
-                  <div class="container">
-                    <div class="row justify-content-sm-center">
-                      <div class="col-md-10 col-xl-8">
-                        <h2 class="heading-decorated">Grebana</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class=" object-wrap">
-            <div class="bg-decor d-flex align-items-center justify-content-start" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
-              <img src="images/bg-decor-4.png" alt="" />
-            </div>
-            <div class="section-lg">
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main style="background-color: #fff;">
+      <section class="section parallax-container context-dark" data-parallax-img="./images/backgrebana.jpg">
+        <div class="parallax-content parallax-header">
+          <div class="parallax-header__inner context-dark text-center">
+            <div class="parallax-header__content">
               <div class="container">
-                <div class="row">
-                  <div class="col-lg-5" data-aos="fade-up" data-aos-duration="3000">
-                    <h4 class="heading-decorated">Un universo virtual pensado para ti.</h4>
-                    <p>
-                        
-                      Estamos comprometidos a liderar la revolución blockchain 
-                        y transformar el mundo de los negocios 
-                            y las relaciones en línea.
-                      
-                    </p>
-                    <div class="row row-30">
-                      <div class="col-xl-6">
-                        
-                      </div>
-                      <div class="col-xl-6">
-                       
-    
-                      </div>
-                    </div>
-    
-    
-                    <div class="row justify-content-md-center">
-                      <div class="col-md-12">
-                       
-                      </div>
-                    </div>
+                <div class="row justify-content-sm-center">
+                  <div class="col-md-10 col-xl-8">
+                    <h2 class="heading-decorated">Grebana</h2>
                   </div>
-                </div>
-              </div>
-            </div>
-            
-              
-            <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(./images/grebana.jpg)">
-
-            </div>
-          </section>
-
-          <section class="blogS">
-            <div class="container">
-              <h2 style="text-align: center; padding: 20px; color: aliceblue;">Razas</h2>
-              <h4 style="text-align: center; padding: 20px; color: aliceblue;">Una coleccion NFTs de utilidad</h4>
-            <div class="card-deck">
-              
-              <div class="card">
-                <img src="./images/NFTSniper.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title ">Grecks</h5>
-                  <p class="card-text"></p>
-                  
-                </div>
-              </div>
-              <div class="card">
-                <img src="./images/NFTNinja.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Teknyz</h5>
-                  <p class="card-text"></p>
-                 
-                </div>
-              </div>
-              <div class="card">
-                <img src="./images/NFTLiboson.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Sombrios</h5>
-                  <p class="card-text"></p>
-                  
                 </div>
               </div>
             </div>
           </div>
-          </section>
+        </div>
+      </section>
 
-          <section class=" object-wrap">
-            <div class="bg-decor d-flex align-items-center justify-content-start" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
-              <!-- <img src="images/bg-decor-4.png" alt=""/> -->
+      <section class=" object-wrap">
+        <div class="bg-decor d-flex align-items-center justify-content-start"
+          data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
+          <img src="images/bg-decor-4.png" alt="" />
+        </div>
+        <div class="section-lg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5" data-aos="fade-up" data-aos-duration="3000">
+                <h4 class="heading-decorated">Un universo virtual pensado para ti.</h4>
+                <p>
+
+                  Estamos comprometidos a liderar la revolución blockchain
+                  y transformar el mundo de los negocios
+                  y las relaciones en línea.
+
+                </p>
+                <div class="row row-30">
+                  <div class="col-xl-6">
+
+                  </div>
+                  <div class="col-xl-6">
+
+
+                  </div>
+                </div>
+
+
+                <div class="row justify-content-md-center">
+                  <div class="col-md-12">
+
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="section-lg">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-5" data-aos="fade-up" data-aos-duration="3000">
-                    <h4 class="heading-decorated">GBN Token</h4>
-                    <p>
-                      Te abre las puertas a beneficios únicos por apoyar el talento de nuestros artistas. 
-                      Una comunidad única donde se puede interactuar con el proyecto de una forma nunca antes vista. 
-                      Los GBN son nuestro token nativo y el corazón de nuestra plataforma.
+          </div>
+        </div>
 
-                      Este tiene una relación 1:1 con el dólar americano y recibirás todos tus beneficios en 
-                      este token (GBN), el cual también podrás intercambiar por criptoactivos tradicionales.
-                      
-                      
 
-                      
-                    </p>
-                    <div class="row row-30">
-                      <div class="col-xl-6">
-                      
-                        <article class="blurb blurb-minimal">
-                          <div class="unit flex-row unit-spacing-md">
-                            <div class="unit-left">
-                              
-                            </div>
-                            <div class="unit-body">
-                              <p class="blurb__title heading-6"><a href="#">Transferencia rápida y segura</a></p>
-                              <p>
-                               En la red bolckchain sin la necesidad de intermediarios costosos.
-                              </p>
-                            </div>
-                          </div>
-                        </article>
+        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+          style="background-image: url(./images/grebana.jpg)">
+
+        </div>
+      </section>
+
+      <section class="blogS">
+        <div class="container">
+          <h2 style="text-align: center; padding: 20px; color: aliceblue;">Razas</h2>
+          <h4 style="text-align: center; padding: 20px; color: aliceblue;">Una coleccion NFTs de utilidad</h4>
+          <div class="card-deck">
+
+            <div class="card">
+              <img src="./images/NFTSniper.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Grecks</h5>
+                <p class="card-text"></p>
+
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/NFTNinja.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Teknyz</h5>
+                <p class="card-text"></p>
+
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/NFTLiboson.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sombrios</h5>
+                <p class="card-text"></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class=" object-wrap">
+        <div class="bg-decor d-flex align-items-center justify-content-start"
+          data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}">
+          <!-- <img src="images/bg-decor-4.png" alt=""/> -->
+        </div>
+        <div class="section-lg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5" data-aos="fade-up" data-aos-duration="3000">
+                <h4 class="heading-decorated">GBN Token</h4>
+                <p>
+                  Te abre las puertas a beneficios únicos por apoyar el talento de nuestros artistas.
+                  Una comunidad única donde se puede interactuar con el proyecto de una forma nunca antes vista.
+                  Los GBN son nuestro token nativo y el corazón de nuestra plataforma.
+
+                  Este tiene una relación 1:1 con el dólar americano y recibirás todos tus beneficios en
+                  este token (GBN), el cual también podrás intercambiar por criptoactivos tradicionales.
+
+
+
+
+                </p>
+                <div class="row row-30">
+                  <div class="col-xl-6">
+
+                    <article class="blurb blurb-minimal">
+                      <div class="unit flex-row unit-spacing-md">
+                        <div class="unit-left">
+
+                        </div>
+                        <div class="unit-body">
+                          <p class="blurb__title heading-6"><a href="#">Transferencia rápida y segura</a></p>
+                          <p>
+                            En la red bolckchain sin la necesidad de intermediarios costosos.
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-xl-6">
-                        
-                        <article class="blurb blurb-minimal">
-                          <div class="unit flex-row unit-spacing-md">
-                            <div class="unit-left">
-                              
-                            </div>
-                            <div class="unit-body">
-                              <p class="blurb__title heading-6"><a href="#">Flexibilidad</a></p>
-                              <p>
-                                Puede ser utilizado como medio de pago o como instrumento financiero.
-                              </p>
-                            </div>
-                          </div>
-                        </article>
-    
+                    </article>
+                  </div>
+                  <div class="col-xl-6">
+
+                    <article class="blurb blurb-minimal">
+                      <div class="unit flex-row unit-spacing-md">
+                        <div class="unit-left">
+
+                        </div>
+                        <div class="unit-body">
+                          <p class="blurb__title heading-6"><a href="#">Flexibilidad</a></p>
+                          <p>
+                            Puede ser utilizado como medio de pago o como instrumento financiero.
+                          </p>
+                        </div>
                       </div>
-                    </div>
-    
-    
-                    <div class="row justify-content-md-center">
-                      <div class="col-md-12">
-                        <!-- Linear progress bar-->
-                        <!-- <div class="progress-linear progress-linear-modern">
+                    </article>
+
+                  </div>
+                </div>
+
+
+                <div class="row justify-content-md-center">
+                  <div class="col-md-12">
+                    <!-- Linear progress bar-->
+                    <!-- <div class="progress-linear progress-linear-modern">
                           <div class="progress-header">
                             <p>Dedication</p><span class="progress-value">49</span>
                           </div>
@@ -290,8 +331,8 @@
                             <div class="progress-bar-linear"></div>
                           </div>
                         </div> -->
-                        <!-- Linear progress bar-->
-                        <!-- <div class="progress-linear progress-linear-modern">
+                    <!-- Linear progress bar-->
+                    <!-- <div class="progress-linear progress-linear-modern">
                           <div class="progress-header">
                             <p>Experience</p><span class="progress-value">29</span>
                           </div>
@@ -299,8 +340,8 @@
                             <div class="progress-bar-linear"></div>
                           </div>
                         </div> -->
-                        <!-- Linear progress bar-->
-                        <!-- <div class="progress-linear progress-linear-modern">
+                    <!-- Linear progress bar-->
+                    <!-- <div class="progress-linear progress-linear-modern">
                           <div class="progress-header">
                             <p>Creativity</p><span class="progress-value">86</span>
                           </div>
@@ -308,207 +349,269 @@
                             <div class="progress-bar-linear"></div>
                           </div>
                         </div> -->
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            
-              
-            <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(./images/token.jpg)">
-
-            </div>
-          </section>
-
-
-          <section class="section parallax-container context-dark" data-parallax-img="./images/backgrebana.jpg">
-            <div class="parallax-content">
-              <div class="container section-md">
-                <div class="row justify-content-md-center row-50">
-                  <h2 class="heading-decorated">Grebana</h2>
-                </div>
-              </div>
-            </div>
-          </section>
-      </main> 
-
-      
-      <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
-        <div class="container">
-          <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="index.html"><img src="images/logo-white-344x67.png" alt="" width="172" height="33"/></a>
-              <h6>Fintech</h6>
-              <p>Somos una EBT: Empresa de Base Tecnológica apasionada por la investigación y el desarrollo en las últimas tecnologías 4.0.</p>
-            
-            </div>
-            
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6>Usuarios</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://partners.neofintech.com.co/">Neo Partners</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://www.figma.com/file/k49o5IiqZ044IWdepXh4xJ/Presentaci%C3%B3n-Portafolio-de-Inversi%C3%B3n-NEO?node-id=0%3A1&t=00HRnmUmrSLA8A7Y-1">
-                    Recursos
-                  </a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/">Neo Shorts</a></li>
-                
-              </ul>
-            </div>
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6>Seguridad</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/Guia.html">Guía para inversión responsable</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/politicas.html">Politicas de Privacidad</a></li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M12 5v14" />
-                    </svg>
-                    <a href="./html/Tratamiento.html">
-                      Tratamiento Legal
-                    </a></li>
-                
-              </ul>
-            </div>
-           
-            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
-              <h6>Compañía</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Nosotros.html">Acerca de Neo</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Soporte.html">Preguntas Frecuentes</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Ecosistema.html">NeoDEX</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/vistatrader.html">Vista Trader</a></li>
-               
-              </ul>
-            </div>
           </div>
+        </div>
 
-          <!-- ---------------------fila dos--------------------------- -->
-          <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
-             
-              <h6>Aprende en nuestras redes:</h6>
-              <a href="https://www.instagram.com/neofintechla/"><img src="images/instagram.png" alt=""></a> 
-              <a href="https://twitter.com/NeoFintechLA"><img src="images/gorjeo.png" alt="" style=" margin-left: 20px;"> </a>
-              
-            </div>
-            
-          
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6> Aprende</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/introduccion-a-blockchain-y-criptoactivos/">
-                    Blockchain y Criptoactivos
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/bitcoin-historia-y-funcionamiento/">
-                    Bitcoin
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/altcoins-diversificacion-y-caracteristicas-principales/">
-                    Altcoins
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/tokens-la-creacion-de-activos-digitales-personalizados/">
-                    Tokens
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/smart-contracts-contratos-inteligentes-en-blockchain/">
-                    Smart Contracts
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- ---------------------Fin fila dos---------------------- -->
 
+        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image"
+          style="background-image: url(./images/token.jpg)">
 
         </div>
       </section>
 
-      <footer class="footer-corporate bg-gray-darkest">
-        <div class="container">
-          <div class="footer-corporate__inner">
-            <p class="rights"><span>Neo Fintech</span><span>&nbsp;&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Design by <a href="#"></a></p>
-           
+
+      <section class="section parallax-container context-dark" data-parallax-img="./images/backgrebana.jpg">
+        <div class="parallax-content">
+          <div class="container section-md">
+            <div class="row justify-content-md-center row-50">
+              <h2 class="heading-decorated">Grebana</h2>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+      </section>
+    </main>
+
+
+    <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
+      <div class="container">
+        <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+          <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="index.html"><img
+                src="images/logo-white-344x67.png" alt="" width="172" height="33" /></a>
+            <h6>Fintech</h6>
+            <p>Somos una EBT: Empresa de Base Tecnológica apasionada por la investigación y el desarrollo en las últimas
+              tecnologías 4.0.</p>
+
+          </div>
+
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6>Usuarios</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://partners.neofintech.com.co/">Neo Partners</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://www.figma.com/file/k49o5IiqZ044IWdepXh4xJ/Presentaci%C3%B3n-Portafolio-de-Inversi%C3%B3n-NEO?node-id=0%3A1&t=00HRnmUmrSLA8A7Y-1">
+                  Recursos
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://shorts.neofintech.com.co/">Neo Shorts</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6>Seguridad</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/Guia.html">Guía para inversión responsable</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/politicas.html">Politicas de Privacidad</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/Tratamiento.html">
+                  Tratamiento Legal
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+            <h6>Compañía</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Nosotros.html">Acerca de Neo</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Soporte.html">Preguntas Frecuentes</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Ecosistema.html">NeoDEX</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/vistatrader.html">Vista Trader</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- ---------------------fila dos--------------------------- -->
+        <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+          <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+
+            <h6>Aprende en nuestras redes:</h6>
+            <a href="https://www.instagram.com/neofintechla/"><img src="images/instagram.png" alt=""></a>
+            <a href="https://twitter.com/NeoFintechLA"><img src="images/gorjeo.png" alt="" style=" margin-left: 20px;">
+            </a>
+
+          </div>
+
+
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6> Aprende</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/04/introduccion-a-blockchain-y-criptoactivos/">
+                  Blockchain y Criptoactivos
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/bitcoin-historia-y-funcionamiento/">
+                  Bitcoin
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/altcoins-diversificacion-y-caracteristicas-principales/">
+                  Altcoins
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/tokens-la-creacion-de-activos-digitales-personalizados/">
+                  Tokens
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/smart-contracts-contratos-inteligentes-en-blockchain/">
+                  Smart Contracts
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./simulador.html">
+                  Simulador
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ---------------------Fin fila dos---------------------- -->
+
+
+      </div>
+    </section>
+
+    <footer class="footer-corporate bg-gray-darkest">
+      <div class="container">
+        <div class="footer-corporate__inner">
+          <p class="rights"><span>Neo Fintech</span><span>&nbsp;&copy;&nbsp;</span><span class="copyright-year"></span>.
+            All Rights Reserved. Design by <a href="#"></a></p>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Javascript-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

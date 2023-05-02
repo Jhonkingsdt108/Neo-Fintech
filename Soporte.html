@@ -1,635 +1,790 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <!-- Site Title-->
-    <title>Preguntas Frecuentes</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="scss/style.scss">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-    <meta http-equiv="Expires" content="0">
-      <meta http-equiv="Last-Modified" content="0">
-      <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-      <meta http-equiv="Pragma" content="no-cache">
-  </head>
-  <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="cssload-container">
-        <svg class="filter" version="1.1">
-          <defs>
-            <filter id="gooeyness">
-              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
-              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness"></fecolormatrix>
-              <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
-            </filter>
-          </defs>
-        </svg>
-        
-        <div class="dots">
-          <div class="dot mainDot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-        <p>Cargando...</p>
+
+<head>
+  <!-- Site Title-->
+  <title>Preguntas Frecuentes</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Stylesheets-->
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="scss/style.scss">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="cssload-container">
+      <svg class="filter" version="1.1">
+        <defs>
+          <filter id="gooeyness">
+            <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+            <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness">
+            </fecolormatrix>
+            <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
+          </filter>
+        </defs>
+      </svg>
+
+      <div class="dots">
+        <div class="dot mainDot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
       </div>
+      <p>Cargando...</p>
     </div>
-    <!-- Page-->
-    <div class="page">
-      
-      <header class="page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px" data-lg-stick-up-offset="35px">
-            <!-- RD Navbar Top Panel-->
-            
-            <div class="rd-navbar-inner rd-navbar-search-wrap">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-344x67.png" alt="" width="172" height="33"/></a></div>
-              </div>
-              <!-- RD Navbar Nav-->
-              <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
-                <div class="rd-navbar-search_collapsable">
-                  <ul class="rd-navbar-nav">
-                    
-                    <li class="active">
-                      <div class="dropdown show">
-                        <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Investigación
-                        </a>
-                      
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="index.html#blockchain">Blockchain</a>
-                          <a class="dropdown-item" href="index.html#blockchain">Inteligencia Artificial</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Servicios
+  </div>
+  <!-- Page-->
+  <div class="page">
+
+    <header class="page-header">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+          data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static"
+          data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false"
+          data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px"
+          data-lg-stick-up-offset="35px">
+          <!-- RD Navbar Top Panel-->
+
+          <div class="rd-navbar-inner rd-navbar-search-wrap">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+              <!-- RD Navbar Brand-->
+              <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-344x67.png"
+                    alt="" width="172" height="33" /></a></div>
+            </div>
+            <!-- RD Navbar Nav-->
+            <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
+              <div class="rd-navbar-search_collapsable">
+                <ul class="rd-navbar-nav">
+
+                  <li class="active">
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Investigación
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="index.html#Productos">Productos Neo</a>
-                        <a class="dropdown-item" href="Ecosistema.html">NeoDEX</a> 
-                        <a class="dropdown-item" href="Grebana.html">Grebana</a>
-                        <a class="dropdown-item" href="https://partners.neofintech.com.co/">Neo Partners</a> 
+                        <a class="dropdown-item" href="index.html#blockchain">Blockchain</a>
+                        <a class="dropdown-item" href="index.html#blockchain">Inteligencia Artificial</a>
                       </div>
                     </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Servicios
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="index.html#Productos">Productos Neo</a>
+                        <a class="dropdown-item" href="Ecosistema.html">NeoDEX</a>
+                        <a class="dropdown-item" href="Grebana.html">Grebana</a>
+                        <a class="dropdown-item" href="https://partners.neofintech.com.co/">Neo Partners</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Compañía
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="./Nosotros.html">Acerca de Neo</a>
                         <a class="dropdown-item" href="https://shorts.neofintech.com.co/">Neo Shorts</a>
                         <a class="dropdown-item" href="./Soporte.html">Preguntas Frecuentes</a>
-                        
+
                       </div>
                     </div>
-                    </li>
-                    <li> <div class="dropdown show">
-                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  </li>
+                  <li>
+                    <div class="dropdown show">
+                      <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Desarrolladores
                       </a>
-                    
+
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <!-- <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a> -->
                       </div>
                     </div>
-                    </li>
-                    <li>
-                      <a href="https://neo-fintech.com/" class="button button-black button-shadow">
-                        Acceder
-                      </a>
                   </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <section class="section parallax-container context-dark" data-parallax-img="images/soporte.jpg">
-            <div class="parallax-content parallax-header">
-              <div class="parallax-header__inner context-dark text-center">
-                <div class="parallax-header__content">
-                  <div class="container">
-                    <div class="row justify-content-sm-center">
-                      <div class="col-md-10 col-xl-8">
-                        <h2 class="heading-decorated">Preguntas Frecuentes</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-       
-       
-         
-          <section class="section-md  text-center decor-text" data-content="Soporte" id="#investigacion" style="background-color: #f3f5f7;"> 
-            <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;x&quot;: -100, &quot;y&quot;: -30, &quot;smoothness&quot;: 30}">
-            </div>
-            <div class="container">
-              
-
-              <div class="row justify-content-md-center justify-content-lg-between row-50 align-items-center" >
-                
-                <div class="col-md-8 col-lg-12" >
-                  <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
-                    <line x1="8" y1="9" x2="16" y2="9" />
-                    <line x1="8" y1="13" x2="14" y2="13" />
-                  </svg></span><h4 class="heading-decorated">Estamos siempre dispuestos a ayudarte.</h4>
-                  
-                 
-                  <div id="accordion" role="tablist">
-                          <!-- Bootstrap card 1-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading1" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse1" aria-controls="accordionCollapse1" style="color: #9c63ff;">
-                                  ¿Qué es Venture Capital en relación con los criptoactivos?
-                              </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse1" role="tabpanel" aria-labelledby="accordionHeading1">
-                              <div class="card-custom-body">
-                                <p>
-                                  El Venture Capital en el contexto de los criptoactivos se refiere a la financiación de nuevas empresas o 
-                                  proyectos en las industrias de blockchain o criptomonedas. 
-                                  Esta forma de inversión puede involucrar la compra directa de criptomonedas, 
-                                  así como inversiones financieras en empresas que desarrollan o utilizan tecnología blockchain.
-                                </p>
-    
-                                
-                               
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 2-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading2" role="tab">
-                              <h5 class="card-custom-title" >
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse2" aria-controls="accordionCollapse2" style="color: #9c63ff;">
-                                  ¿En qué activos digitales invierten?
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse2" role="tabpanel" aria-labelledby="accordionHeading2">
-                              <div class="card-custom-body">
-                                <p>
-                                  Nos centramos en invertir en empresas que aprovechan la tecnología blockchain para mejorar sus procesos 
-                                  empresariales y desarrollar soluciones innovadoras. Nuestra estrategia busca obtener beneficios a largo plazo, 
-                                  al mismo tiempo que contribuimos al crecimiento y desarrollo de esta tecnología emergente.
-                                </p>
-                                
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 3-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading1" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse3" aria-controls="accordionCollapse3" style="color: #9c63ff;">
-                                  ¿Cómo funciona nuestra estrategia de inversión?
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse3" role="tabpanel" aria-labelledby="accordionHeading3">
-                              <div class="card-custom-body">
-                                <p>
-                                  Nuestra estrategia de inversión tiene como objetivo proporcionarte un portafolio diversificado de inversiones en criptoactivos
-                                   y blockchain. Para identificar oportunidades de inversión prometedoras, combinamos el análisis cuantitativo con estudios
-                                    de mercado profesionales. De esta forma, podemos tomar decisiones informadas y maximizar tus posibles beneficios. 
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                           <!-- Bootstrap card 4-->
-                           <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                           -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                           box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading4" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse4" aria-controls="accordionCollapse4" style="color: #9c63ff;">
-                                  ¿Qué es un ecosistema económico digital descentralizado?
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse4" role="tabpanel" aria-labelledby="accordionHeading4">
-                              <div class="card-custom-body">
-                                <p>
-                                  Un ecosistema económico digital descentralizado es un sistema de actividad económica que no está controlado 
-                                  por ninguna autoridad o institución centralizada. En este tipo de ecosistema, los participantes pueden realizar 
-                                  actividades económicas de igual a igual, sin necesidad de intermediarios como bancos o agencias gubernamentales.
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 5-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading5" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse5" aria-controls="accordionCollapse5" style="color: #9c63ff;" >
-                                  ¿Cómo permite la tecnología blockchain un entorno económico descentralizado?
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse5" role="tabpanel" aria-labelledby="accordionHeading5">
-                              <div class="card-custom-body">
-                                <p>
-                                  Al ofrecer a los actores un medio seguro y transparente para hacer negocios, la tecnología blockchain 
-                                  crea un entorno económico descentralizado. La tecnología blockchain garantiza que las transacciones se 
-                                  registren de forma resistente al fraude y la manipulación mediante un sistema de libro mayor distribuido.
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 6-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading6" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse6" aria-controls="accordionCollapse6" style="color: #9c63ff;">
-                                  ¿Qué sectores económicos tendrán acceso a su ecosistema descentralizado?
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse6" role="tabpanel" aria-labelledby="accordionHeading6">
-                              <div class="card-custom-body">
-                                <p>
-                                  Nuestro ecosistema descentralizado estará abierto a participantes de diversos sectores económicos, 
-                                  incluyendo la banca, la agricultura, los bienes raíces y muchos otros.
-
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 7-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading7" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse7" aria-controls="accordionCollapse7" style="color: #9c63ff;">
-                                  ¿El ecosistema será accesible tanto a particulares como a empresas?
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse7" role="tabpanel" aria-labelledby="accordionHeading7">
-                              <div class="card-custom-body">
-                                <p>
-                                  Desde luego, nuestro ecosistema será accesible tanto a personas como a empresas. Creemos que todo el mundo, 
-                                  independientemente de su procedencia o medios económicos, debería tener acceso a un ecosistema económico 
-                                  totalmente descentralizado.
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 8-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading8" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse8" aria-controls="accordionCollapse8" style="color: #9c63ff;">
-                                  ¿Cómo garantizan la seguridad del ecosistema y de sus participantes?
-
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse8" role="tabpanel" aria-labelledby="accordionHeading8">
-                              <div class="card-custom-body">
-                                <p>
-                                  La seguridad de nuestro ecosistema y de sus participantes es de suma importancia para nosotros.
-                                   Para garantizarla, hemos implementado diversas medidas de protección, como técnicas de encriptación
-                                    sólidas, autenticación multifactor y auditorías de seguridad frecuentes. Estas salvaguardas son 
-                                    solo algunos ejemplos de cómo aseguramos la protección de nuestro ecosistema.
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 9-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading9" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse9" aria-controls="accordionCollapse9" style="color: #9c63ff;">
-                                  ¿Ofrecerán algún tipo de educación o recursos para ayudar a la gente a entender las criptomonedas y la tecnología blockchain?
-
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse9" role="tabpanel" aria-labelledby="accordionHeading9">
-                              <div class="card-custom-body">
-                                <p>
-                                  Sí, creemos que la educación y los recursos son esenciales para promover la adopción 
-                                  generalizada de los criptoactivos y la tecnología blockchain. Por eso ofreceremos una 
-                                  serie de materiales y recursos educativos para las personas que se inician en este ámbito.
-
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 10-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading10" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse10" aria-controls="accordionCollapse10" style="color: #9c63ff;">
-                                  ¿Cómo evaluarán el éxito del ecosistema económico descentralizado?
-
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse10" role="tabpanel" aria-labelledby="accordionHeading10">
-                              <div class="card-custom-body">
-                                <p>
-                                  Para determinar el éxito de nuestro ecosistema, llevaremos a cabo un seguimiento de múltiples indicadores, 
-                                  entre los que se incluyen el volumen de transacciones, la participación de los usuarios y el crecimiento de la base de usuarios. 
-                                  De esta forma, podremos evaluar el éxito de nuestro ecosistema y continuar mejorándolo en función de los resultados obtenidos.
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 11-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading11" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse11" aria-controls="accordionCollapse11" style="color: #9c63ff;">
-                                  ¿Cómo gestionan el cumplimiento de la normativa sobre bitcoins?
-
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse11" role="tabpanel" aria-labelledby="accordionHeading11">
-                              <div class="card-custom-body">
-                                <p>
-                                  El cumplimiento de la normativa es crucial para el éxito de nuestro ecosistema. Es por eso que trabajamos en estrecha 
-                                  colaboración con especialistas jurídicos y reguladores para asegurarnos de cumplir con todas las leyes y regulaciones 
-                                  aplicables a las criptomonedas y tecnología blockchain. De esta manera, podemos garantizar el cumplimiento de las 
-                                  normativas y desarrollar nuestro ecosistema de forma sostenible y segura.
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Bootstrap card 12-->
-                          <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
-                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
-                            <div class="card-custom-heading" id="accordionHeading12" role="tab">
-                              <h5 class="card-custom-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse12" aria-controls="accordionCollapse12" style="color: #9c63ff;">
-                                  ¿Tienen planes de expandirse internacionalmente? ¿Cómo abordarán los diferentes regímenes normativos de otros países?
-
-                                </a>
-                              </h5>
-                            </div>
-                            <div class="card-custom-collapse collapse" id="accordionCollapse12" role="tabpanel" aria-labelledby="accordionHeading12">
-                              <div class="card-custom-body">
-                                <p>
-                                  Sí, tenemos la intención de expandirnos a nivel internacional y estamos realizando una investigación 
-                                  exhaustiva sobre los marcos reguladores de muchos países para garantizar el cumplimiento de las leyes 
-                                  y normativas locales. Creemos firmemente en el potencial de nuestro ecosistema económico descentralizado 
-                                  para ayudar a personas de todo el mundo, y estamos comprometidos a hacerlo de manera amplia y efectiva.
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </section>
-          <section class="section parallax-container context-dark" data-parallax-img="images/soporte.jpg">
-            <div class="parallax-content">
-              <div class="container section-md">
-                <div class="row justify-content-md-center row-50">
-                  
-                  
-                  
-                  
-                </div>
-              </div>
-            </div>
-          </section>
-         
-      </main> 
-
-      <!-- Page Footer-->
-      <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
-        <div class="container">
-          <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="index.html"><img src="images/logo-white-344x67.png" alt="" width="172" height="33"/></a>
-              <h6>Fintech</h6>
-              <p>Somos una EBT: Empresa de Base Tecnológica apasionada por la investigación y el desarrollo en las últimas tecnologías 4.0.</p>
-            
-            </div>
-            
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6>Usuarios</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://partners.neofintech.com.co/">Neo Partners</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://www.figma.com/file/k49o5IiqZ044IWdepXh4xJ/Presentaci%C3%B3n-Portafolio-de-Inversi%C3%B3n-NEO?node-id=0%3A1&t=00HRnmUmrSLA8A7Y-1">
-                    Recursos
-                  </a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/">Neo Shorts</a></li>
-                
-              </ul>
-            </div>
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6>Seguridad</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/Guia.html">Guía para inversión responsable</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/politicas.html">Politicas de Privacidad</a></li>
                   <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M12 5v14" />
-                    </svg>
-                    <a href="./html/Tratamiento.html">
-                      Tratamiento Legal
-                    </a></li>
-                
-              </ul>
-            </div>
-           
-            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
-              <h6>Compañía</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Nosotros.html">Acerca de Neo</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Soporte.html">Preguntas Frecuentes</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./Ecosistema.html">NeoDEX</a></li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="./html/vistatrader.html">Vista Trader</a></li>
-                               
-              </ul>
+                    <a href="https://neo-fintech.com/" class="button button-black button-shadow">
+                      Acceder
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <!-- ---------------------fila dos--------------------------- -->
-          <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
-             
-              <h6>Aprende en nuestras redes:</h6>
-              <a href="https://www.instagram.com/neofintechla/"><img src="images/instagram.png" alt=""></a> 
-              <a href="https://twitter.com/NeoFintechLA"><img src="images/gorjeo.png" alt="" style=" margin-left: 20px;"> </a>
-              
-            </div>
-            
-          
-            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-              <h6> Aprende</h6>
-              <ul class="list-xxs">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/introduccion-a-blockchain-y-criptoactivos/">
-                    Blockchain y Criptoactivos
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/bitcoin-historia-y-funcionamiento/">
-                    Bitcoin
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/altcoins-diversificacion-y-caracteristicas-principales/">
-                    Altcoins
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/tokens-la-creacion-de-activos-digitales-personalizados/">
-                    Tokens
-                  </a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 5v14" />
-                  </svg>
-                  <a href="https://shorts.neofintech.com.co/index.php/2023/04/05/smart-contracts-contratos-inteligentes-en-blockchain/">
-                    Smart Contracts
-                  </a>
-                </li>
-              </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section parallax-container context-dark" data-parallax-img="images/soporte.jpg">
+        <div class="parallax-content parallax-header">
+          <div class="parallax-header__inner context-dark text-center">
+            <div class="parallax-header__content">
+              <div class="container">
+                <div class="row justify-content-sm-center">
+                  <div class="col-md-10 col-xl-8">
+                    <h2 class="heading-decorated">Preguntas Frecuentes</h2>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- ---------------------Fin fila dos---------------------- -->
-
-
         </div>
       </section>
 
-     
-    </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+
+
+      <section class="section-md  text-center decor-text" data-content="Soporte" id="#investigacion"
+        style="background-color: #f3f5f7;">
+        <div class="bg-decor d-flex align-items-center justify-content-end"
+          data-parallax-scroll="{&quot;x&quot;: -100, &quot;y&quot;: -30, &quot;smoothness&quot;: 30}">
+        </div>
+        <div class="container">
+
+
+          <div class="row justify-content-md-center justify-content-lg-between row-50 align-items-center">
+
+            <div class="col-md-8 col-lg-12">
+              <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="44"
+                  height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+                  <line x1="8" y1="9" x2="16" y2="9" />
+                  <line x1="8" y1="13" x2="14" y2="13" />
+                </svg></span>
+              <h4 class="heading-decorated">Estamos siempre dispuestos a ayudarte.</h4>
+
+
+              <div id="accordion" role="tablist">
+                <!-- Bootstrap card 1-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading1" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse1" aria-controls="accordionCollapse1" style="color: #9c63ff;">
+                        ¿Qué es Venture Capital en relación con los criptoactivos?
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse1" role="tabpanel"
+                    aria-labelledby="accordionHeading1">
+                    <div class="card-custom-body">
+                      <p>
+                        El Venture Capital en el contexto de los criptoactivos se refiere a la financiación de nuevas
+                        empresas o
+                        proyectos en las industrias de blockchain o criptomonedas.
+                        Esta forma de inversión puede involucrar la compra directa de criptomonedas,
+                        así como inversiones financieras en empresas que desarrollan o utilizan tecnología blockchain.
+                      </p>
+
+
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 2-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading2" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse2" aria-controls="accordionCollapse2" style="color: #9c63ff;">
+                        ¿En qué activos digitales invierten?
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse2" role="tabpanel"
+                    aria-labelledby="accordionHeading2">
+                    <div class="card-custom-body">
+                      <p>
+                        Nos centramos en invertir en empresas que aprovechan la tecnología blockchain para mejorar sus
+                        procesos
+                        empresariales y desarrollar soluciones innovadoras. Nuestra estrategia busca obtener beneficios
+                        a largo plazo,
+                        al mismo tiempo que contribuimos al crecimiento y desarrollo de esta tecnología emergente.
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 3-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading1" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse3" aria-controls="accordionCollapse3" style="color: #9c63ff;">
+                        ¿Cómo funciona nuestra estrategia de inversión?
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse3" role="tabpanel"
+                    aria-labelledby="accordionHeading3">
+                    <div class="card-custom-body">
+                      <p>
+                        Nuestra estrategia de inversión tiene como objetivo proporcionarte un portafolio diversificado
+                        de inversiones en criptoactivos
+                        y blockchain. Para identificar oportunidades de inversión prometedoras, combinamos el análisis
+                        cuantitativo con estudios
+                        de mercado profesionales. De esta forma, podemos tomar decisiones informadas y maximizar tus
+                        posibles beneficios.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 4-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                           -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                           box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading4" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse4" aria-controls="accordionCollapse4" style="color: #9c63ff;">
+                        ¿Qué es un ecosistema económico digital descentralizado?
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse4" role="tabpanel"
+                    aria-labelledby="accordionHeading4">
+                    <div class="card-custom-body">
+                      <p>
+                        Un ecosistema económico digital descentralizado es un sistema de actividad económica que no está
+                        controlado
+                        por ninguna autoridad o institución centralizada. En este tipo de ecosistema, los participantes
+                        pueden realizar
+                        actividades económicas de igual a igual, sin necesidad de intermediarios como bancos o agencias
+                        gubernamentales.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 5-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading5" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse5" aria-controls="accordionCollapse5" style="color: #9c63ff;">
+                        ¿Cómo permite la tecnología blockchain un entorno económico descentralizado?
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse5" role="tabpanel"
+                    aria-labelledby="accordionHeading5">
+                    <div class="card-custom-body">
+                      <p>
+                        Al ofrecer a los actores un medio seguro y transparente para hacer negocios, la tecnología
+                        blockchain
+                        crea un entorno económico descentralizado. La tecnología blockchain garantiza que las
+                        transacciones se
+                        registren de forma resistente al fraude y la manipulación mediante un sistema de libro mayor
+                        distribuido.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 6-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading6" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse6" aria-controls="accordionCollapse6" style="color: #9c63ff;">
+                        ¿Qué sectores económicos tendrán acceso a su ecosistema descentralizado?
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse6" role="tabpanel"
+                    aria-labelledby="accordionHeading6">
+                    <div class="card-custom-body">
+                      <p>
+                        Nuestro ecosistema descentralizado estará abierto a participantes de diversos sectores
+                        económicos,
+                        incluyendo la banca, la agricultura, los bienes raíces y muchos otros.
+
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 7-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading7" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse7" aria-controls="accordionCollapse7" style="color: #9c63ff;">
+                        ¿El ecosistema será accesible tanto a particulares como a empresas?
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse7" role="tabpanel"
+                    aria-labelledby="accordionHeading7">
+                    <div class="card-custom-body">
+                      <p>
+                        Desde luego, nuestro ecosistema será accesible tanto a personas como a empresas. Creemos que
+                        todo el mundo,
+                        independientemente de su procedencia o medios económicos, debería tener acceso a un ecosistema
+                        económico
+                        totalmente descentralizado.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 8-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading8" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse8" aria-controls="accordionCollapse8" style="color: #9c63ff;">
+                        ¿Cómo garantizan la seguridad del ecosistema y de sus participantes?
+
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse8" role="tabpanel"
+                    aria-labelledby="accordionHeading8">
+                    <div class="card-custom-body">
+                      <p>
+                        La seguridad de nuestro ecosistema y de sus participantes es de suma importancia para nosotros.
+                        Para garantizarla, hemos implementado diversas medidas de protección, como técnicas de
+                        encriptación
+                        sólidas, autenticación multifactor y auditorías de seguridad frecuentes. Estas salvaguardas son
+                        solo algunos ejemplos de cómo aseguramos la protección de nuestro ecosistema.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 9-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading9" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse9" aria-controls="accordionCollapse9" style="color: #9c63ff;">
+                        ¿Ofrecerán algún tipo de educación o recursos para ayudar a la gente a entender las
+                        criptomonedas y la tecnología blockchain?
+
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse9" role="tabpanel"
+                    aria-labelledby="accordionHeading9">
+                    <div class="card-custom-body">
+                      <p>
+                        Sí, creemos que la educación y los recursos son esenciales para promover la adopción
+                        generalizada de los criptoactivos y la tecnología blockchain. Por eso ofreceremos una
+                        serie de materiales y recursos educativos para las personas que se inician en este ámbito.
+
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 10-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading10" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse10" aria-controls="accordionCollapse10" style="color: #9c63ff;">
+                        ¿Cómo evaluarán el éxito del ecosistema económico descentralizado?
+
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse10" role="tabpanel"
+                    aria-labelledby="accordionHeading10">
+                    <div class="card-custom-body">
+                      <p>
+                        Para determinar el éxito de nuestro ecosistema, llevaremos a cabo un seguimiento de múltiples
+                        indicadores,
+                        entre los que se incluyen el volumen de transacciones, la participación de los usuarios y el
+                        crecimiento de la base de usuarios.
+                        De esta forma, podremos evaluar el éxito de nuestro ecosistema y continuar mejorándolo en
+                        función de los resultados obtenidos.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 11-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading11" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse11" aria-controls="accordionCollapse11" style="color: #9c63ff;">
+                        ¿Cómo gestionan el cumplimiento de la normativa sobre bitcoins?
+
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse11" role="tabpanel"
+                    aria-labelledby="accordionHeading11">
+                    <div class="card-custom-body">
+                      <p>
+                        El cumplimiento de la normativa es crucial para el éxito de nuestro ecosistema. Es por eso que
+                        trabajamos en estrecha
+                        colaboración con especialistas jurídicos y reguladores para asegurarnos de cumplir con todas las
+                        leyes y regulaciones
+                        aplicables a las criptomonedas y tecnología blockchain. De esta manera, podemos garantizar el
+                        cumplimiento de las
+                        normativas y desarrollar nuestro ecosistema de forma sostenible y segura.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bootstrap card 12-->
+                <div class="card card-custom" style="background-color: #fff;-webkit-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          -moz-box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);
+                          box-shadow: 5px 4px 35px -22px rgba(0,0,0,0.56);">
+                  <div class="card-custom-heading" id="accordionHeading12" role="tab">
+                    <h5 class="card-custom-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#accordionCollapse12" aria-controls="accordionCollapse12" style="color: #9c63ff;">
+                        ¿Tienen planes de expandirse internacionalmente? ¿Cómo abordarán los diferentes regímenes
+                        normativos de otros países?
+
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="card-custom-collapse collapse" id="accordionCollapse12" role="tabpanel"
+                    aria-labelledby="accordionHeading12">
+                    <div class="card-custom-body">
+                      <p>
+                        Sí, tenemos la intención de expandirnos a nivel internacional y estamos realizando una
+                        investigación
+                        exhaustiva sobre los marcos reguladores de muchos países para garantizar el cumplimiento de las
+                        leyes
+                        y normativas locales. Creemos firmemente en el potencial de nuestro ecosistema económico
+                        descentralizado
+                        para ayudar a personas de todo el mundo, y estamos comprometidos a hacerlo de manera amplia y
+                        efectiva.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="section parallax-container context-dark" data-parallax-img="images/soporte.jpg">
+        <div class="parallax-content">
+          <div class="container section-md">
+            <div class="row justify-content-md-center row-50">
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Page Footer-->
+    <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
+      <div class="container">
+        <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+          <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3"><a class="brand" href="index.html"><img
+                src="images/logo-white-344x67.png" alt="" width="172" height="33" /></a>
+            <h6>Fintech</h6>
+            <p>Somos una EBT: Empresa de Base Tecnológica apasionada por la investigación y el desarrollo en las últimas
+              tecnologías 4.0.</p>
+
+          </div>
+
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6>Usuarios</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://partners.neofintech.com.co/">Neo Partners</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://www.figma.com/file/k49o5IiqZ044IWdepXh4xJ/Presentaci%C3%B3n-Portafolio-de-Inversi%C3%B3n-NEO?node-id=0%3A1&t=00HRnmUmrSLA8A7Y-1">
+                  Recursos
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://shorts.neofintech.com.co/">Neo Shorts</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6>Seguridad</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/Guia.html">Guía para inversión responsable</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/politicas.html">Politicas de Privacidad</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/Tratamiento.html">
+                  Tratamiento Legal
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+            <h6>Compañía</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Nosotros.html">Acerca de Neo</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Soporte.html">Preguntas Frecuentes</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./Ecosistema.html">NeoDEX</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./html/vistatrader.html">Vista Trader</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- ---------------------fila dos--------------------------- -->
+        <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+          <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+
+            <h6>Aprende en nuestras redes:</h6>
+            <a href="https://www.instagram.com/neofintechla/"><img src="images/instagram.png" alt=""></a>
+            <a href="https://twitter.com/NeoFintechLA"><img src="images/gorjeo.png" alt="" style=" margin-left: 20px;">
+            </a>
+
+          </div>
+
+
+          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+            <h6> Aprende</h6>
+            <ul class="list-xxs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/04/introduccion-a-blockchain-y-criptoactivos/">
+                  Blockchain y Criptoactivos
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="https://shorts.neofintech.com.co/index.php/2023/04/04/bitcoin-historia-y-funcionamiento/">
+                  Bitcoin
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/altcoins-diversificacion-y-caracteristicas-principales/">
+                  Altcoins
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9c63ff" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/tokens-la-creacion-de-activos-digitales-personalizados/">
+                  Tokens
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a
+                  href="https://shorts.neofintech.com.co/index.php/2023/04/05/smart-contracts-contratos-inteligentes-en-blockchain/">
+                  Smart Contracts
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5v14" />
+                </svg>
+                <a href="./simulador.html">
+                  Simulador
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ---------------------Fin fila dos---------------------- -->
+
+
+      </div>
+    </section>
+
+
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Javascript-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
