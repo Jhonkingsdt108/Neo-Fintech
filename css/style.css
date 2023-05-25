@@ -20738,8 +20738,15 @@ h3+.card-custom-group-wrap {
 	width: 100%;
 }
 
-#partner-tab {
+#partner-tab,
+#junior-tab,
+#middle-tab,
+#juniorD-tab,
+#seniorD-tab,
+#masterD-tab,
+#embajador-tab {
 
 	border-radius: 15px;
+	margin: 0px;
 
 }

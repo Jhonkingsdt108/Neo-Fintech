@@ -23,6 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
     <style>
         .ie-panel {
             display: none;
@@ -100,95 +101,39 @@
                                         src="images/logo-344x67.png" alt="" width="172" height="33" /></a></div>
                         </div>
                         <!-- RD Navbar Nav-->
-                        <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
-                            <div class="rd-navbar-search_collapsable">
-                                <ul class="rd-navbar-nav">
 
-                                    <li class="active">
-                                        <div class="dropdown show">
-                                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                Investigación
-                                            </a>
-
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a class="dropdown-item" href="index.html#blockchain">Blockchain</a>
-                                                <a class="dropdown-item" href="index.html#blockchain">Inteligencia
-                                                    Artificial</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dropdown show">
-                                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                Servicios
-                                            </a>
-
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a class="dropdown-item" href="index.html#Productos">Productos Neo</a>
-                                                <a class="dropdown-item" href="Ecosistema.html">NeoDEX</a>
-                                                <a class="dropdown-item" href="Grebana.html">Grebana</a>
-                                                <a class="dropdown-item" href="https://partners.neofintech.com.co/">Neo
-                                                    Partners</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dropdown show">
-                                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                Compañía
-                                            </a>
-
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a class="dropdown-item" href="./Nosotros.html">Acerca de Neo</a>
-                                                <a class="dropdown-item" href="https://shorts.neofintech.com.co/">Neo
-                                                    Shorts</a>
-                                                <a class="dropdown-item" href="./Soporte.html">Preguntas Frecuentes</a>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dropdown show">
-                                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                Desarrolladores
-                                            </a>
-
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <!-- <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a> -->
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="https://neo-fintech.com/" class="button button-black button-shadow">
-                                            Acceder
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </nav>
             </div>
         </header>
-        <section class="section parallax-container context-dark" data-parallax-img="images/paralaxnosotros.png">
+        <section class="section parallax-container context-dark" style="background-color: #0b132b;">
             <div class="parallax-content parallax-header">
                 <div class="parallax-header__inner context-dark text-center">
-                    <div class="parallax-header__content">
+                    <div class="parallax-header__content"
+                        style="height: 48vh; background-image: url(./images/back_simula.jpg);">
                         <div class="container">
                             <div class="row justify-content-sm-center">
-                                <div class="col-md-10 col-xl-8">
-                                    <h2 class="heading-decorated">Simulador</h2>
+                                <div class="col-md-10 col-xl-10 ">
+
+                                    <h2 class="h">Simulador de rentabilidades</h2>
+                                    <a class="button button-black button-shadow" href="#simulador"
+                                        style="background-color: #0b132b; border: none; text-transform:capitalize;">Simular
+                                        tus rentabilidades</a>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section style="width: 100%; height: 25vh; background-color: #0b132b; color: #fff;">
+            <div class="container">
+                <h4 class="heading-decorated" style="color:#fff; padding-top: 3%;">Simula una proyección financiera de
+                    los productos Neo
+                </h4>
+                <p>Además podrás saber sobre los valores y porcentajes de tus recompenzas</p>
             </div>
         </section>
 
@@ -214,41 +159,52 @@
                 style="background-image: url(images/portfolio-original-7-1280x1920.jp)"></div>
         </section>
 
-        <section>
+        <section id="simulador">
             <div class="container">
 
                 <ul class="nav nav-tabs" id="myTab" role="tablist" style="text-align: center;">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="partner-tab" data-bs-toggle="tab" data-bs-target="#partner"
-                            type="button" role="tab" aria-controls="partner" aria-selected="true">Partner</button>
+                            type="button" role="tab" aria-controls="partner" aria-selected="true"
+                            style="cursor: pointer; background-color: #9c63ff; color: #fff; ">Partner</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="junior-tab" data-bs-toggle="tab" data-bs-target="#junior"
-                            type="button" role="tab" aria-controls="junior" aria-selected="false">Junior</button>
+                            type="button" role="tab" aria-controls="junior" aria-selected="false"
+                            style="cursor: pointer; background-color: #9c63ff; color: #fff; ">Junior</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="middle-tab" data-bs-toggle="tab" data-bs-target="#middle"
-                            type="button" role="tab" aria-controls="middle" aria-selected="false">Middle</button>
+                            type="button" role="tab" aria-controls="middle" aria-selected="false"
+                            style="cursor: pointer; background-color: #9c63ff; color: #fff; ">Middle</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="juniorD-tab" data-bs-toggle="tab" data-bs-target="#juniorD"
-                            type="button" role="tab" aria-controls="juniorD" aria-selected="false">Director
+                            type="button" role="tab" aria-controls="juniorD" aria-selected="false"
+                            style="cursor: pointer; background-color: #9c63ff; color: #fff; ">Director
                             Junior</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="seniorD-tab" data-bs-toggle="tab" data-bs-target="#seniorD"
-                            type="button" role="tab" aria-controls="seniorD" aria-selected="false">Director
+                            type="button" role="tab" aria-controls="seniorD" aria-selected="false"
+                            style="cursor: pointer; background-color: #9c63ff; color: #fff; ">Director
                             Senior</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="masterD-tab" data-bs-toggle="tab" data-bs-target="#masterD"
-                            type="button" role="tab" aria-controls="masterD" aria-selected="false">Director
+                            type="button" role="tab" aria-controls="masterD" aria-selected="false"
+                            style="cursor: pointer; background-color: #9c63ff; color: #fff; ">Director
                             Master</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="embajador-tab" data-bs-toggle="tab" data-bs-target="#embajador"
-                            type="button" role="tab" aria-controls="embajador" aria-selected="false">Embajador</button>
+                            type="button" role="tab" aria-controls="embajador" aria-selected="false"
+                            style="z-index: +3;cursor: pointer; background-color: #9c63ff; color: #fff;">Embajador</button>
                     </li>
+                    <!-- <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="embajador-tab" data-bs-toggle="tab" data-bs-target="" type="button"
+                            role="tab" aria-controls="" aria-selected="false">. . .</button>
+                    </li> -->
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="partner" role="tabpanel" aria-labelledby="partner-tab">
@@ -884,18 +840,7 @@
                                     Smart Contracts
                                 </a>
                             </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="icon icon-tabler icon-tabler-minus-vertical" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M12 5v14" />
-                                </svg>
-                                <a href="./simulador.html">
-                                    Simulador
-                                </a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
