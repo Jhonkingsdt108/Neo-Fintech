@@ -1,0 +1,613 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Back Office Neo Fintech
+    </title>
+
+
+
+
+
+
+
+    <!-- Fonts and icons     -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <!-- CSS Files -->
+    <link href="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/css/light-bootstrap-dashboard.css?v=2.0.1"
+        rel="stylesheet">
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/css/demo.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+
+
+
+
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar">
+
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="../index.html" class="simple-text">
+                        <img src="../images/logo-344x67.png" alt="" style="width: 70%;">
+                    </a>
+                </div>
+                <ul class="nav nav-mobile-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                            <i class="nc-icon nc-palette"></i>
+                            <span class="d-lg-none">Dashboard</span>
+                        </a>
+                    </li>
+                    <!-- <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <i class="nc-icon nc-planet"></i>
+                            <span class="notification">5</span>
+                            <span class="d-lg-none">Notification</span>
+                        </a>
+
+                    </li> -->
+
+
+
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="no-icon">Log out</span>
+                        </a>
+                    </li> -->
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#indicadores">
+                            <i class="nc-icon nc-chart-pie-35"></i>
+                            <h5 style="text-transform: capitalize; padding-top: 2%;">Indicadores</h5>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a class="nav-link" href="./table.html">
+                            <i class="nc-icon nc-notes"></i>
+                            <p>Table List</p>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a class="nav-link" href="#perfil">
+                            <i class="nc-icon nc-circle-09"></i>
+                            <h5 style="text-transform: capitalize; padding-top: 2%;">Perfil</h5>
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                        <a class="nav-link" href="./typography.html">
+                            <i class="nc-icon nc-paper-2"></i>
+                            <p>Typography</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./icons.html">
+                            <i class="nc-icon nc-atom"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="nav-link" href="./maps.html">
+                            <i class="nc-icon nc-pin-3"></i>
+                            <p>Maps</p>
+                        </a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="nav-link" href="./notifications.html">
+                            <i class="nc-icon nc-bell-55"></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li> -->
+                    <li class="nav-item active active-pro">
+                        <a class="nav-link active" href="../index.html">
+                            <i class="nc-icon nc-alien-33"></i>
+                            <h5 style="text-transform: capitalize; padding-top: 2%;">Salir</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="main-panel">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500" id="indicadores">
+                <div class=" container-fluid  ">
+                    <a class="navbar-brand" href=""> Bienvenido Camilo Andres Quiroz Parra </a>
+                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item">
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+
+
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="../index.html">
+                                    <span class="no-icon">Salir</span>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="container">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+
+
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                            {
+                                "symbols": [
+                                    {
+                                        "proName": "FOREXCOM:NSXUSD",
+                                        "title": "US 100"
+                                    },
+                                    {
+                                        "proName": "FX_IDC:EURUSD",
+                                        "title": "EUR/USD"
+                                    },
+                                    {
+                                        "proName": "BITSTAMP:BTCUSD",
+                                        "title": "Bitcoin"
+                                    },
+                                    {
+                                        "proName": "BITSTAMP:ETHUSD",
+                                        "title": "Ethereum"
+                                    },
+                                    {
+                                        "description": "Tether",
+                                        "proName": "CRYPTOCAP:USDT"
+                                    }
+                                ],
+                                    "colorTheme": "light",
+
+                                        "showSymbolLogo": true,
+                                            "locale": "es"
+                            }
+                        </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Resumen de mercados</h4>
+                                    <p class="card-category">Observa los mercados desde una perspectiva macroeconómica
+                                    </p>
+                                </div>
+                                <div class="card-body ">
+                                    <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                        <div class="tradingview-widget-container__widget"></div>
+
+                                        <script type="text/javascript"
+                                            src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
+                                            async>
+                                                {
+                                                    "colorTheme": "light",
+                                                        "dateRange": "12M",
+                                                            "showChart": true,
+                                                                "locale": "es",
+                                                                    "largeChartUrl": "",
+                                                                        "isTransparent": false,
+                                                                            "showSymbolLogo": true,
+                                                                                "showFloatingTooltip": false,
+                                                                                    "width": "400",
+                                                                                        "height": "660",
+                                                                                            "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                                                                                "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                                                                                    "gridLineColor": "rgba(42, 46, 57, 0)",
+                                                                                                        "scaleFontColor": "rgba(106, 109, 120, 1)",
+                                                                                                            "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                                                                                "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                                                                                    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                                                                                                        "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                                                                                            "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                                                                                                                                "tabs": [
+                                                                                                                                    {
+                                                                                                                                        "title": "Índices",
+                                                                                                                                        "symbols": [
+                                                                                                                                            {
+                                                                                                                                                "s": "FOREXCOM:SPXUSD",
+                                                                                                                                                "d": "S&P 500"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "FOREXCOM:NSXUSD",
+                                                                                                                                                "d": "US 100"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "FOREXCOM:DJI",
+                                                                                                                                                "d": "Dow 30"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "INDEX:NKY",
+                                                                                                                                                "d": "Nikkei 225"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "INDEX:DEU40",
+                                                                                                                                                "d": "DAX Index"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "CRYPTOCAP:USDT"
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                                        "originalTitle": "Indices"
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                        "title": "Bonos",
+                                                                                                                                        "symbols": [
+                                                                                                                                            {
+                                                                                                                                                "s": "CME:GE1!",
+                                                                                                                                                "d": "Eurodollar"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "CBOT:ZB1!",
+                                                                                                                                                "d": "T-Bond"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "CBOT:UB1!",
+                                                                                                                                                "d": "Ultra T-Bond"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "EUREX:FGBL1!",
+                                                                                                                                                "d": "Euro Bund"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "EUREX:FBTP1!",
+                                                                                                                                                "d": "Euro BTP"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "EUREX:FGBM1!",
+                                                                                                                                                "d": "Euro BOBL"
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                                        "originalTitle": "Bonds"
+                                                                                                                                    },
+                                                                                                                                    {
+                                                                                                                                        "title": "Forex",
+                                                                                                                                        "symbols": [
+                                                                                                                                            {
+                                                                                                                                                "s": "FX:EURUSD",
+                                                                                                                                                "d": "EUR/USD"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "FX:GBPUSD",
+                                                                                                                                                "d": "GBP/USD"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "FX:USDJPY",
+                                                                                                                                                "d": "USD/JPY"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "FX:USDCHF",
+                                                                                                                                                "d": "USD/CHF"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "FX:AUDUSD",
+                                                                                                                                                "d": "AUD/USD"
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "s": "FX:USDCAD",
+                                                                                                                                                "d": "USD/CAD"
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                                        "originalTitle": "Forex"
+                                                                                                                                    }
+                                                                                                                                ]
+                                                }
+                                            </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+                                </div>
+                                <div class="card-footer ">
+                                    <div class="legend">
+
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Gráficos avanzados en tiempo real</h4>
+                                    <p class="card-category">24 Hours performance</p>
+                                </div>
+                                <div class="card-body " style="height: 60vh;">
+                                    <div id="chartHours" class="ct-ch">
+
+
+
+                                        <!-- TradingView Widget BEGIN -->
+                                        <div class="tradingview-widget-container">
+                                            <div id="analytics-platform-chart-demo"></div>
+
+                                            <script type="text/javascript"
+                                                src="https://s3.tradingview.com/tv.js"></script>
+                                            <script type="text/javascript">
+                                                new TradingView.widget(
+                                                    {
+                                                        "container_id": "analytics-platform-chart-demo",
+
+
+                                                        "autosize": true,
+                                                        "symbol": "CRYPTOCAP:USDT",
+                                                        "interval": "D",
+                                                        "timezone": "exchange",
+                                                        "theme": "light",
+                                                        "style": "0",
+                                                        "toolbar_bg": "#f1f3f6",
+                                                        "withdateranges": true,
+                                                        "allow_symbol_change": true,
+                                                        "save_image": false,
+                                                        "details": true,
+                                                        "hotlist": true,
+                                                        "calendar": true,
+                                                        "locale": "es"
+                                                    }
+                                                );
+                                            </script>
+                                        </div>
+                                        <!-- TradingView Widget END -->
+                                    </div>
+                                </div>
+                                <div class="card-footer ">
+                                    <div class="legend">
+
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="perfil">
+                        <div class="col-md-6">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title"></h4>
+                                    <p class="card-category"></p>
+                                </div>
+                                <div class="card-body ">
+                                    <div id="chartActivity" class="ct-chart">
+
+                                        <div class="container my-5">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <div class="card card-block bg-faded">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-5">
+                                                                    <img src="../images/perfil.png" alt=""
+                                                                        class="rounded img-fluid" />
+                                                                </div>
+                                                                <div class="col-7">
+                                                                    <h4>
+                                                                        Carlos Andres Quiroz Parra</h4>
+
+                                                                    <p>
+                                                                        <i class="glyphicon glyphicon-globe"></i>C.C.
+                                                                        1131108736
+                                                                        <br><br>
+                                                                        <i
+                                                                            class="glyphicon glyphicon-envelope"></i>camiloandresquirozparra@gmail.com
+                                                                        <br /> <br>
+
+
+                                                                        <i class="glyphicon glyphicon-gift"></i>
+                                                                    </p>
+                                                                    <h4>
+                                                                    </h4>
+                                                                    <!-- Split button -->
+                                                                    <div class="btn-group">
+
+
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item" href="#"><i
+                                                                                    class="fa fa-user"></i>&nbsp;Link
+                                                                                1</a>
+                                                                            <a class="dropdown-item" href="#">Link 2</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card  card-tasks">
+
+                                <div class="card-body ">
+                                    <div class="table-full-width">
+
+                                    </div>
+                                    <div id="chartActivity" class="ct-chart">
+
+                                        <div class="container my-5">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <div class="card card-block bg-faded">
+                                                        <div class="card-body">
+                                                            <div class="row">
+
+                                                                <div class="col-9">
+                                                                    <h4>
+                                                                        Valor de la inversión</h4>
+
+                                                                    <p>
+                                                                        <i
+                                                                            class="glyphicon glyphicon-envelope"></i>$20.000.000
+                                                                        COP
+                                                                        <br /> <br>
+
+                                                                    </p>
+                                                                    <h4>
+                                                                        Rentabilidad Semestral</h4>
+
+
+                                                                    <p>
+                                                                        <i
+                                                                            class="glyphicon glyphicon-envelope"></i>$6.000.000
+                                                                        COP
+                                                                        <br /> <br>
+
+                                                                    </p>
+                                                                    <!-- Split button -->
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer ">
+                                    <div class="legend">
+
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="border-radius: 5px;">
+                <div class="card  text-white">
+                    <img class="card-img" src="../images/bannerBack.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+
+                        <img src="../images/logo-344x67.png" alt="" style="padding-top: 5%;">
+                        <h4 class="card-text">
+                            Conéctate al desarrollo de Startups.
+                        </h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <nav>
+
+                        <p class="copyright text-center">
+                            © Copyright
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                            <a href="../index.html">Neo Fintech</a>
+                        </p>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!--   Core JS Files   -->
+    <script src=".https://demos.creative-tim.com/light-bootstrap-dashboard/assets/js/core/jquery.3.2.1.min.js"
+        type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/js/core/popper.min.js"
+        type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/js/core/bootstrap.min.js"
+        type="text/javascript"></script>
+    <!--  Plugin for Switches, full documentation here: https://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script
+        src="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
+    <!--  Chartist Plugin  -->
+    <script src="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/js/plugins/chartist.min.js"></script>
+    <!--  Share Plugin -->
+    <script src="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/js/plugins/jquery.sharrre.js"></script>
+    <!--  Notifications Plugin    -->
+
+    <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+    <script
+        src="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/js/light-bootstrap-dashboard.js?v=2.0.1"
+        type="text/javascript"></script>
+    <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+    <script src="https://demos.creative-tim.com/light-bootstrap-dashboard/assets/js/demo.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            demo.initDashboardPageCharts();
+
+            demo.showNotification();
+
+        });
+    </script>
+
+
+</body>
+
+</html>
