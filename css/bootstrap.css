@@ -3405,7 +3405,7 @@ input[type="button"].btn-block {
 	text-align: left;
 	list-style: none;
 	/* From https://css.glass */
-	background: rgba(11, 19, 43, 0.6);
+	background: rgba(18, 154, 255, 0.6);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -5598,7 +5598,7 @@ input[type="button"].btn-block {
 .list-group-item:focus {
 	z-index: 1;
 	text-decoration: none;
-	color: #9c63ff;
+	color: #129aff;
 	cursor: pointer;
 	transition: all 0.3s ease;
 	border-radius: 15px;
@@ -5616,7 +5616,7 @@ input[type="button"].btn-block {
 .list-group-item.active {
 	z-index: 2;
 	color: #fff;
-	background: #9c63ff;
+	background: #129aff;
 	cursor: pointer;
 	transition: all 0.3s ease;
 	border-radius: 15px;
