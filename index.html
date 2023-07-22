@@ -43,9 +43,18 @@
   <meta http-equiv="Last-Modified" content="0">
   <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
   <meta http-equiv="Pragma" content="no-cache">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      $('#myModal').modal('show')
+    })
+
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+
   <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
         src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
         alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
@@ -77,6 +86,24 @@
   </div>
   <!-- Page-->
   <div class="page">
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Bienvenidos a Neo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>¡Hola! Gracias por visitar Neo, tu destino para descubrir nuevas posibilidades.</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- Page header-->
     <header class="page-header">
       <!-- RD Navbar-->
@@ -264,7 +291,7 @@
 
 
 
-    </section>
+
     <section style="background-color: #129aff; ">
       <div class="container-fluid">
         <div class="container justify-content-center">

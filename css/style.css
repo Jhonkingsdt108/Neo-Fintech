@@ -5988,7 +5988,7 @@ a.thumbnail-classic-title:hover {
 .bg-image-6 a:focus,
 .bg-image-7 a:focus,
 .bg-image-8 a:focus {
-	color: #888;
+	color: #fff;
 }
 
 .context-dark a:hover,
@@ -20749,4 +20749,16 @@ h3+.card-custom-group-wrap {
 	border-radius: 15px;
 	margin: 0px;
 
+}
+
+.modal-title {
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+
+}
+
+.modal-content {
+	background-color: #00aced;
+	color: #fff;
 }
