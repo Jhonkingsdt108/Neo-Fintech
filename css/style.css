@@ -12100,13 +12100,13 @@ html .page .rd-navbar-fixed .rd-navbar-fixed--hidden {
 .rd-navbar-fixed .rd-navbar-panel {
 	color: #000;
 	box-shadow: none;
-	background: #08132b;
+	background: #129aff;
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap {
 	color: #fff;
 	/* From https://css.glass */
-	background: rgba(11, 19, 43, 0.6);
+	background: rgba(18, 154, 255, 0.6);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
